@@ -1,0 +1,279 @@
+1.constant----->
+class A{
+    int a=10;
+    void show(){
+        System.out.println(a);
+    }
+}
+public class instancevariable {
+    public static void main(String[] args) {
+        A p=new A();
+        p.show();
+        
+}
+}
+
+different variable name value passes--------->
+
+class A{
+    int a;
+    int b;
+    void setA(int a,int b){
+      this.a=a;
+      this.b=b;
+    }
+    int getA(){
+        return a;
+    }
+    int getA1(){
+        return b;
+    }
+}
+public class instancevariable {
+    public static void main(String[] args) {
+        A p=new A();
+        p.setA(23,67);
+        System.out.println(p.getA());
+        System.out.println(p.getA1());;
+    }
+}
+
+same variable name-------------------------->
+
+class A{
+    int a;
+    void show(int a){
+        this.a=a;
+        System.out.println(a);
+    }
+}
+public class instancevariable {
+    public static void main(String[] args) {
+        A p=new A();
+        p.show(67);
+}
+}
+
+constructor-------------------------->
+
+class A{
+    int a;
+    A(int a){
+        this.a=a;
+        System.out.println("consrtuctor "+a);
+    }
+}
+public class instancevariable {
+    public static void main(String[] args) {
+        new A(67);
+}
+}
+
+2. add() :getter setter :5 add------------------------->
+
+class A{
+  int a;
+  int b;
+  int c;
+  int d;
+  int e;
+  void setA(int a,int b,int c,int d,int e){
+    this.a=a;
+    this.b=b;
+    this.c=c;
+    this.d=d;
+    this.e=e;
+  }
+}
+class B extends A{
+  int getA(){
+    return a;
+  }
+  int getB(){
+    return b;
+  }
+  int getC(){
+    return c;
+  }
+  int getD(){
+    return d;
+  }
+  int getE(){
+    return e;
+  }
+  
+  void add(){
+  System.out.println(a+b+c+d+e);
+  }
+}
+
+public class Basic {
+  public static void main(String[] args) {
+   B p=new B();
+   p.setA(3,3,4,6,7);
+   p.getB();
+   p.getC();
+   p.getD();
+   p.getE();
+   p.add();
+  }
+  }
+
+3.sub() :7 variable -------------------------------->
+
+class A{
+  int a;
+  int b;
+  int c;
+  int d;
+  int e;
+  int f;
+  int g;
+  void setA(int a,int b,int c,int d,int e,int f,int g){
+    this.a=a;
+    this.b=b;
+    this.c=c;
+    this.d=d;
+    this.e=e;
+    this.f=f;
+    this.g=g;
+  }
+}
+class B extends A{
+  int getA(){
+    return a;
+  }
+  int getB(){
+    return b;
+  }
+  int getC(){
+    return c;
+  }
+  int getD(){
+    return d;
+  }
+  int getE(){
+    return e;
+  }
+  
+  void sub(){
+  System.out.println(a-b-c-d-e-f-g);
+  }
+}
+
+public class Basic {
+  public static void main(String[] args) {
+   B p=new B();
+   p.setA(3,3,4,6,7,5,5);
+   p.getB();
+   p.getC();
+   p.getD();
+   p.getE();
+   p.sub();
+  }
+  }
+4.div() :2 variable ----------------------------------->
+
+class A{
+  int a;
+  int b;
+  void setA(int a,int b){
+    this.a=a;
+    this.b=b;
+  }
+}
+class B extends A{
+  int getA(){
+    return a;
+  }
+  int getB(){
+    return b;
+  }
+  
+  void div(){
+  System.out.println(a/b);
+  }
+}
+
+public class Basic {
+  public static void main(String[] args) {
+   B p=new B();
+   p.setA(10,5);
+   p.getB();
+   p.div();
+  }
+  }
+5.multi() :three variable ------------------------------>
+
+class A{
+  int a;
+  int b;
+  int c;
+  void setA(int a,int b,int c){
+    this.a=a;
+    this.b=b;
+    this.c=c;
+  }
+}
+class B extends A{
+  int getA(){
+    return a;
+  }
+  int getB(){
+    return b;
+  }
+  int getC(){
+    return c;
+  }
+  
+  void multi(){
+  System.out.println(a*b*c);
+  }
+}
+
+public class Basic {
+  public static void main(String[] args) {
+   B p=new B();
+   p.setA(10,5,2);
+   p.getB();
+   p.getC();
+   p.multi();
+  }
+  }
+
+6.mod() ----------------------------->
+
+class A{
+  int a;
+  int b;
+  void setA(int a,int b){
+    this.a=a;
+    this.b=b;
+  }
+}
+class B extends A{
+  int getA(){
+    return a;
+  }
+  int getB(){
+    return b;
+  }
+  
+  void mod(){
+  System.out.println(a%b);
+  }
+}
+
+public class Basic {
+  public static void main(String[] args) {
+   B p=new B();
+   p.setA(10,5);
+   p.getB();
+   p.mod();
+  }
+  }
+
+
+
+
+

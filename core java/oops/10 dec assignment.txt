@@ -1,0 +1,584 @@
+1.final class ------------------------------------>
+
+first file------------->
+
+final class A{
+    void show1(){
+        System.out.println("Final class method");
+    }
+}
+
+second file--------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        A p=new A();
+        p.show1();
+    }
+}
+
+final method-------------------------------------->
+
+first file--------------->
+
+class A{
+   final void show1(){
+        System.out.println("Final class method");
+    }
+}
+
+second file-------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        A p=new A();
+        p.show1();
+    }
+}
+
+final variable------------------------------------->
+
+first file-------------->
+
+class A{
+   final int a=10;
+   void show1(){
+    a=78;
+    System.out.println("Final class method "+a);
+    
+    }
+}
+
+second file----------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        A p=new A();
+        p.show1();
+    }
+}
+
+static class--------------------------------------->
+
+first file------------------------>
+
+class A{
+    static class B{
+         void show1(){
+        System.out.println("static class method");
+        }
+    }
+}
+
+second file------------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        A.B p=new A.B();
+        p.show1();
+    }
+}
+
+static method--------------------------------------->
+
+first  file------------------------->
+
+class A{
+    static class B{
+        static void show1(){
+        System.out.println("static class method");
+        }
+    }
+}
+
+second file------------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        A.B.show1();
+    }
+}
+
+static variable--------------------------------------->
+
+first file--------------------->
+
+class A{
+    static class B{
+        static int a=10;
+        static void show1(){
+        System.out.println("static class method "+a);
+        }
+    }
+}
+
+second file--------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        A.B.show1();
+    }
+}
+
+byte --- short ---------------------------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        byte a=89;
+        short b=a;
+        System.out.println(b);
+    }
+}
+
+byte --- int ------------------------------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        byte a=89;
+        int b=a;
+        System.out.println(b);
+    }
+}
+
+byte -- long ------------------------------------------>
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        byte a=89;
+        long b=a;
+        System.out.println(b);
+    }
+}
+
+byte ----float ---------------------------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        byte a=89;
+        float b=a;
+        System.out.println(b);
+    }
+}
+
+byte --- double ----------------------------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        byte a=89;
+        double b=a;
+        System.out.println(b);
+    }
+}
+
+short ---int---------------------------------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        short a=89;
+        int b=a;
+        System.out.println(b);
+    }
+}
+
+short ---long --------------------------------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        short a=89;
+        int b=a;
+        System.out.println(b);
+    }
+}
+
+short ---float --------------------------------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        short a=89;
+        float b=a;
+        System.out.println(b);
+    }
+}
+
+short ---- double ----------------------------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        short a=89;
+        double b=a;
+        System.out.println(b);
+    }
+}
+
+int --- long----------------------------------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        int a=89;
+        long b=a;
+        System.out.println(b);
+    }
+}
+
+int --- float-------------------------------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        int a=89;
+        float b=a;
+        System.out.println(b);
+    }
+}
+
+int --- double------------------------------------------->
+
+ public class Aggregation2 {
+    public static void main(String[] args){
+        int a=89;
+        double b=a;
+        System.out.println(b);
+    }
+}
+
+long ---float-------------------------------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        long a=89;
+        float b=a;
+        System.out.println(b);
+    }
+}
+
+long --- double ----------------------------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        long a=89;
+        double b=a;
+        System.out.println(b);
+    }
+}
+
+float ---double-------------------------------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        float a=89;
+        double b=a;
+        System.out.println(b);
+    }
+}
+
+double ---float--------------------------------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        double a=89;
+        float b=(float)a;
+        System.out.println(b);
+    }
+}
+
+double --- long-------------------------------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        double a=89;
+        long b=(long)a;
+        System.out.println(b);
+    }
+}
+
+double --- int -------------------------------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        double a=89;
+        int b=(int)a;
+        System.out.println(b);
+    }
+}
+
+double -- char--------------------------------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        double a=89;
+        char b=(char)a;
+        System.out.println(b);
+    }
+}
+
+double --- short------------------------------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        double a=89;
+        short b=(short)a;
+        System.out.println(b);
+    }
+}
+
+double --- byte------------------------------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        double a=89;
+        byte b=(byte)a;
+        System.out.println(b);
+    }
+}
+
+float ---long -------------------------------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        float a=89;
+        byte b=(byte)a;
+        System.out.println(b);
+    }
+}
+
+float ---int ---------------------------------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        float a=89;
+        int b=(int)a;
+        System.out.println(b);
+    }
+}
+
+float ---char----------------------------------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        float a=89;
+        char b=(char)a;
+        System.out.println(b);
+    }
+}
+
+float --- short-------------------------------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        float a=89;
+        short b=(short)a;
+        System.out.println(b);
+    }
+}
+
+float ---byte----------------------------------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        float a=89;
+        byte b=(byte)a;
+        System.out.println(b);
+    }
+}
+
+long ---int ----------------------------------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        long a=89;
+        int b=(int)a;
+        System.out.println(b);
+    }
+}
+
+long --- char---------------------------------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        long a=89;
+        char b=(char)a;
+        System.out.println(b);
+    }
+}
+
+long ---- short ------------------------------------------>
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        long a=89;
+        short b=(short)a;
+        System.out.println(b);
+    }
+}
+
+
+long -- byte --------------------------------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        long a=89;
+        byte b=(byte)a;
+        System.out.println(b);
+    }
+}
+
+int ---char----------------------------------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        int a=89;
+        char b=(char)a;
+        System.out.println(b);
+    }
+}
+
+int ---short -------------------------------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        int a=89;
+        short b=(short)a;
+        System.out.println(b);
+    }
+}
+
+int --- byte---------------------------------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        int a=89;
+        byte b=(byte)a;
+        System.out.println(b);
+    }
+}
+
+short --- byte ------------------------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        short a=89;
+        byte b=(byte)a;
+        System.out.println(b);
+    }
+}
+
+char -- short --------------------------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        char a='s';
+        short b=(short)a;
+        System.out.println(b);
+    }
+}
+
+char --- byte ---------------------------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        char a='s';
+        byte b=(byte)a;
+        System.out.println(b);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

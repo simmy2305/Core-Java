@@ -1,0 +1,427 @@
+1)array : Armstrong find ------------------------------->
+
+
+public class arrayLoop{
+    public static void main(String[] args) {
+        int a[]={167,234,567,153,678};
+        for(int i=0;i<a.length;i++){
+            int num=a[i];
+            int temp=num,rem,sum=0;
+            while(num>0){
+                rem =num%10;
+                sum=sum+(rem*rem*rem);
+                num=num/10;
+            }
+            if(temp==sum){
+                System.out.println("armstrong number : "+a[i]);
+             }
+        }
+    }
+}
+
+------------------------------------------------------------------------------------------------------------
+
+
+2)array :prime number ------------------------------->
+
+public class arrayLoop{
+    public static void main(String[] args) {
+        int a[]={1,2,3,4,5,6,7,8,9,10};
+        for(int i=1;i<a.length;i++){
+            int count=1;
+          for(int j=2;j<a[i];j++){
+            if(a[i]%j==0){
+                count=0;
+              }
+            }
+          if(count==1){
+            System.out.println("prime number  : "+a[i]);
+           }
+        }
+      }
+    }
+
+------------------------------------------------------------------------------------------------------------
+
+
+3)array :find palindrome number ------------------------------->
+
+public class arrayLoop{
+    public static void main(String[] args) {
+        int a[]={121,234,678,151,789};
+        for(int i=0;i<a.length;i++){
+            int num=a[i];
+            int original_num=num;
+            int rem,reversed_num=0;
+            while(num!=0){
+            rem=num%10;
+            reversed_num=reversed_num*10+rem;
+            num=num/10;
+            }
+            if(original_num==reversed_num){
+            System.out.println("palindrome : "+a[i]);
+            }
+        }
+      }
+    }
+
+------------------------------------------------------------------------------------------------------------
+
+ 
+4)array :neon number ------------------------------->
+
+public class arrayLoop{
+    public static void main(String[] args) {
+        int a[]={1,2,3,4,5,6,7,8,9,10};
+        for(int i=0;i<a.length;i++){
+            int num=a[i];
+            int sum=0,n;
+            int square=num*num;
+            while(square!=0){
+            n=square%10;
+            sum=sum+n;
+            square=square/10;
+            }
+            if(num==sum){
+             System.out.println("neon number : "+a[i] );
+            }
+        }
+      }
+    }
+
+------------------------------------------------------------------------------------------------------------
+
+
+
+5)input a array count total element in array ------------------------------->
+
+public class arrayLoop{
+    public static void main(String[] args) {
+        int a[]={1,2,3,4,5,6,7,8,9,10};
+        int count=0;
+        for(int i=0;i<a.length;i++){
+            count++;
+        }
+        System.out.println("Number of element in an array : "+count);
+      }
+    }
+
+------------------------------------------------------------------------------------------------------------
+
+6)sum of total element of the array ------------------------------->
+
+public class arrayLoop{
+    public static void main(String[] args) {
+        int a[]={1,2,3,4,5,6,7,8,9,10};
+        int sum=0;
+        for(int i=0;i<a.length;i++){
+            sum=sum+a[i];
+        }
+        System.out.println("sum of the total element in array is : "+sum);
+      }
+    }
+
+------------------------------------------------------------------------------------------------------------
+
+
+7)array :char : vowel 
+	find 
+	find index
+	count ------------------------------->
+
+public class arrayLoop{
+    public static char findIndex(char a[],int num){
+        for(int i=0;i<a.length;i++){
+            if(a[i]=='a' || a[i]=='e' || a[i]=='i' || a[i]=='o' || a[i]=='u'){
+              System.out.println("vowel is  : "+a[i]);
+              int num=a[i];
+              if(a[i]==num){
+               System.out.println("index is : "+i);
+              }
+          }
+    }
+    }
+    public static void main(String[] args) {
+        char a[]={'s','i','m','r','a','n'};
+         findIndex(a,num);
+        }
+}
+
+------------------------------------------------------------------------------------------------------------
+
+8)array:
+[1,2,3,4,5] check input number present or not ------------------------------->
+
+import java.util.*;
+public class arrayLoop{
+    public static void main(String[] args) {
+        int a[]={1,2,3,4,5};
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter a number : ");
+        int num=sc.nextInt();
+        for(int i=0;i<a.length;i++){
+          if(a[i]==num){
+              System.out.println("present");
+          }
+    }
+    }
+}
+
+------------------------------------------------------------------------------------------------------------
+
+9)array :
+a[]={1,2,3}
+b[]={1,2,3}
+
+2,4,6 ------------------------------->
+
+import java.util.*;
+public class arrayLoop{
+        public static void main(String[] args) {
+        int a[]={1,2,3};
+        int b[]={1,2,3};
+        int sum[]=new int[a.length];
+        for(int i=0;i<a.length;i++){
+        sum[i]=a[i]+b[i];
+        System.out.print(sum[i]+" ");
+    }
+    
+    }
+}
+
+------------------------------------------------------------------------------------------------------------
+
+10)array :5,3,8,5 
+
+number :5385 
+first digit and last digit sum :10 ------------------------------->
+
+
+public class arrayLoop{
+        public static void main(String[] args) {
+        int a[]={5,3,8,5};
+        int num=0;
+        int sum=0;
+        for(int i=0;i<a.length;i++){
+         num=num*10+a[i];
+        } 
+        System.out.print("Number is : "+num);
+        int lastDigit=num%10;
+        int firstDigit=num;
+        while(firstDigit>=10){
+          firstDigit=firstDigit/10;
+        }
+        sum=firstDigit+lastDigit;
+        System.out.println("sum of first and last digit : "+sum);
+    }
+}
+
+------------------------------------------------------------------------------------------------------------
+
+11)1,2,3,4,5,6,7,8,9,10
+
+1 swap 10 
+10,2,3,4,5,6,7,8,9,1------------------------------->
+
+public class Arraysinjava {
+    public static void main(String[] args) {
+        int num[]={1,2,3,4,5,6,7,8,9,10};
+        num[0]=num[9];
+        num[9]=num.length-9;
+        for(int i=0;i<num.length;i++){
+            System.out.println(num[i]);
+        }
+        
+    }
+}
+
+------------------------------------------------------------------------------------------------------------
+
+
+12)1,2,3,4,5,6,7,8,9,10
+
+1 swap 5 
+6 swap 10 
+5,2,3,4,1,10,7,8,9,6 ------------------------------->
+
+public class Arraysinjava {
+    public static void main(String[] args) {
+        int num[]={1,2,3,4,5,6,7,8,9,10};
+        num[0]=num[4];
+        num[4]=num.length-9;
+        num[5]=num[9];
+        num[9]=num.length-4;
+        for(int i=0;i<num.length;i++){
+            System.out.print(num[i]+" ");
+        }
+        
+    }
+}
+
+------------------------------------------------------------------------------------------------------------
+
+13)first odd number swap last odd number ------------------------------->
+
+public class Arraysinjava {
+    public static void main(String[] args) {
+        int num[]={1,2,3,4,5,6,7,8,9,10};
+        int Firstoddindex=0;
+        int Lastoddindex=0;
+        for(int i=0;i<num.length;i++){
+        if(num[i]%2!=0){
+          if(Firstoddindex==0){
+            Firstoddindex=i;
+          }
+          Lastoddindex=i;
+        }
+
+        } 
+        if(Firstoddindex!=0 && Lastoddindex!=0 && Firstoddindex!=Lastoddindex){
+            int count=num[Firstoddindex];
+            num[Firstoddindex]=num[Lastoddindex];
+            num[Lastoddindex]=count;
+        }
+        for(int i=0;i<num.length;i++){
+           System.out.print(num[i]+" ");
+        }
+    }
+}
+
+------------------------------------------------------------------------------------------------------------
+
+
+14)first even index swap last even index------------------------------->
+
+
+public class Arraysinjava {
+    public static void main(String[] args) {
+        int num[]={1,2,3,4,5,6,7,8,9,10};
+        int Firstoddindex=0;
+        int Lastoddindex=0;
+        for(int i=0;i<num.length;i++){
+        if(num[i]%2==0){
+          if(Firstoddindex==0){
+            Firstoddindex=i;
+          }
+          Lastoddindex=i;
+        }
+
+        } 
+        if(Firstoddindex!=0 && Lastoddindex!=0 && Firstoddindex!=Lastoddindex){
+            int count=num[Firstoddindex];
+            num[Firstoddindex]=num[Lastoddindex];
+            num[Lastoddindex]=count;
+        }
+        for(int i=0;i<num.length;i++){
+           System.out.print(num[i]+" ");
+        }
+    }
+}
+
+------------------------------------------------------------------------------------------------------------
+
+15)string :hello,hii,bye,tata
+hello swap tata ------------------------------->
+
+public class Arraysinjava {
+    public static void main(String[] args) {
+        String greet[]={"hello","hii","bye","tata"};
+        String index = greet[0];
+        greet[0]=greet[3];
+        greet[3]=index;
+        for(int i=0;i<greet.length;i++){
+          System.out.print(greet[i]+" ");
+        } 
+        
+    }
+}
+
+------------------------------------------------------------------------------------------------------------
+
+16)number :1,2,3,4,5 
+
+every number table print ------------------------------->
+
+public class Arraysinjava {
+    public static void main(String[] args) {
+        int num[]={1,2,3,4,5};
+        for(int i=0;i<num.length;i++){
+            for(int j=1;j<=10;j++){
+              System.out.println(num[i]+" X "+j +" = "+num[i]*j);
+            }
+          
+        } 
+        
+    }
+}
+
+------------------------------------------------------------------------------------------------------------
+
+17)number :1,2,3,4,5
+
+every element factorial number ------------------------------->
+
+public class Arraysinjava {
+    public static void main(String[] args) {
+        int num[]={1,2,3,4,5};
+        
+        for(int i=0;i<num.length;i++){
+            int fact=1;
+            int j=1;
+            while(j<=num[i]){
+            fact=fact*j;
+            j++;
+            }
+            System.out.println("fact of "+num[i]+" is : "+fact);
+        }
+    }
+}
+
+------------------------------------------------------------------------------------------------------------
+
+18)number :
+1,2,3,4,5 
+
+single 12345 
+output :23456------------------------------->
+
+public class Arraysinjava {
+    public static void main(String[] args) {
+        int num[]={1,2,3,4,5};
+        int number=0;
+        String string=" ";
+        for(int i=0;i<num.length;i++){
+        number=num[i]+1;
+        string=string+number;
+        }
+        System.out.println(string);
+    }
+}
+
+------------------------------------------------------------------------------------------------------------
+
+19)number :34,12,67,445,32
+number :34126744532
+
+even number count digit ------------------------------->
+
+public class Arraysinjava {
+    public static void main(String[] args) {
+        int num[]={34,12,67,445,32};
+        int number=0;
+        String string=" ";
+        int count=0;
+        for(int i=0;i<num.length;i++){
+            if(num[i]%2==0){
+               count++;
+            }
+        number=num[i]+1;
+        string=string+number;
+        }
+        System.out.println("number of total even numbers in this array is : "+count);
+        System.out.println(string);
+    }
+}
+
+
+

@@ -1,0 +1,598 @@
+fibonaci series
+
+#include <stdio.h>
+
+int main()
+{
+    int a=0,b=1;
+    int n;
+    printf("Enter term : ");
+    scanf("%d",&n);
+    
+    printf("%d %d ",a,b);
+    
+    int i=1;
+    
+     while(i<=n){
+         
+         int c=a+b;
+         printf("%d ",c);
+         i++;
+         a=b;
+         b=c;
+     }
+    
+
+    return 0;
+}
+
+reversed-number print--------------------------->
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    printf("enter a number : ");
+    scanf("%d",&a);
+    
+       while(a>0){
+           
+       int ones_digit=a%10;
+       printf(" %d\n",ones_digit);
+       a=a/10;
+       }
+   
+
+    return 0;
+}
+
+count of digit in a number------------------------------>
+
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    printf("enter a number : ");
+    scanf("%d",&a);
+    
+    int count; 
+    
+       while(a>0){
+           
+       a=a/10;
+       count++;
+       
+       }
+       printf(" %d",count);
+   
+
+    return 0;
+}
+reversed of the number-------------------->
+#include <stdio.h>
+
+int main()
+{
+    int a,b=0;
+    printf("enter a number : ");
+    scanf("%d",&a);
+    
+    
+       while(a>0){
+           
+       int ones_digit=a%10;
+       b=b*10+ones_digit;
+       a=a/10;
+       
+       }
+       printf("%d",b);
+       
+   
+
+    return 0;
+}
+
+palindrome numbers------------->
+		
+#include <stdio.h>
+
+int main() {
+    int num, originalNum, remainder, reversedNum = 0;
+
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+
+    originalNum = num;
+
+   
+    while (num != 0) {
+        remainder = num % 10;
+        reversedNum = reversedNum * 10 + remainder;
+        num=num/10;
+    }
+
+        if (originalNum == reversedNum) {
+        printf("%d is a palindrome number.\n", originalNum);
+    } else {
+        printf("%d is not a palindrome number.\n", originalNum);
+    }
+
+    return 0;
+}
+
+power calculator---------------->
+
+#include <stdio.h>
+
+int main() {
+	int a,b;
+	printf("enter a number : ");
+	scanf("%d",&a);
+	printf("enter power : ");
+	scanf("%d",&b);
+    
+    int i=1;
+    int ans=1;
+	while(i<=b){
+	    ans =ans*a;
+	    i++;
+	}
+	printf("%d",ans);
+
+
+		return 0;
+}
+
+#include <stdio.h>
+
+int main() {
+	int random_num,user_guess;
+	
+	printf("Enter a number between 1 to 100 :");
+	scanf("%d",&user_guess);
+	
+	 srand(time(NULL));
+	
+	random_num = rand()%10+1;
+	printf("%d \n",random_num);
+	
+	if(random_num==user_guess){
+	    printf("congrats you guessed it write ");
+	}
+	else if(user_guess<random_num)
+	{
+	    printf("your guess is too low, try again");
+	}
+	else if(user_guess > random_num){
+	    printf("your guess is two high ,try again");
+	}
+	
+    
+		return 0;
+}
+ 
+
+star pattern------------
+
+#include <stdio.h>
+
+int main()
+{   int i,j;
+    for(i=1;i<=3;i++){
+        
+        for(j=1;j<=i;j++){         *
+                                   * *
+            printf("*");           * * *
+        }
+        printf("\n");
+    }
+    
+
+    return 0;
+}
+
+#include <stdio.h>
+
+int main()
+{   int i,j;
+
+    for(i=1;i<=3;i++){
+                                      * * *
+                                      * *  
+        for(j=3;j>=i;j--){            *
+            
+            printf("*");
+        }
+        printf("\n");
+    }
+    
+
+    return 0;
+}
+
+for printing prime numbers------------------------------------
+
+int main() {
+    
+    int limit,count,num;
+
+    printf("Enter the limit up to print prime numbers: ");
+    scanf("%d", &limit);
+
+    printf("Prime numbers between 1 and %d are:\n", limit);
+    
+    for (num = 2; num <= limit; num++){
+        
+        count = 1;  
+        
+        for (int i = 2; i <= num / 2; i++) {
+            
+            if (num % i == 0) { 
+                count = 0;
+                break;
+            }
+            
+        }
+        
+        if (count == 1) {
+            
+            printf("%d ", num);
+        }
+    }
+
+    printf("\n");
+    return 0;
+}
+
+#include <stdio.h>
+
+int main()
+{
+    int num1;
+    int num2;
+    printf("enter a first number : ");
+    scanf("%d",&num1);
+    printf("enter a  second number : ");
+    scanf("%d",&num2);
+    int add=num1+num2;
+    int sub=num1-num2;
+    int multi=num1*num2;
+    int divi=num1/num2;
+    printf("%d \n",add);
+    printf("%d \n",sub);
+    printf("%d \n",multi);
+    printf("%d \n",divi);
+    
+    return 0;
+}
+no return and no argument--------->
+
+#include <stdio.h>
+void add();
+int main()
+{ 
+    
+    add();
+    return 0;
+}
+
+ void add(){
+     int a,b,c;
+     printf("enter a first number : ");
+     scanf("%d",&a);
+     printf("enter a second number : ");
+     scanf("%d",&b);
+     c=a+b;
+     
+     printf("%d",c);
+     
+     
+ }
+ z star pattern--------------->
+
+#include <stdio.h>
+int i,j,k;
+int main(){
+        int n;
+        printf("enter a number : ");
+        scanf("%d",&n);
+        for(i=1;i<=n;i++){
+            for(j=1;j<=n;j++){
+                if(i==1||i+j==n+1||i==n){
+                    printf("*");
+                }
+                else{
+                    printf(" ");
+                }
+                
+            }
+            printf("\n");
+        }
+    
+
+}
+ 
+program to find first and last digit ---------------------->
+
+#include <stdio.h>
+int main(){
+    
+    int num, firstdigit,lastDigit,first;
+    
+    printf("Enter any number: ");
+    scanf("%d", &num);
+    first=num;
+    while(first>=10){
+        first=first/10;
+    }
+    printf("first digit is : %d\n",first);
+    lastDigit = num % 10;
+    printf("Last digit : %d", lastDigit);
+}
+
+
+practice questions through java---------------------------->
+
+fibonnaci series by java------->
+
+import java.util.*;
+public class switchcase {
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter a value ");
+        int num =sc.nextInt();
+        int a=0;
+        int b=1;
+        System.out.println(a);
+        System.out.println(b);
+        int i=1;
+        while(i<=num){
+            int c=a+b;
+           System.out.println(c);
+           i++;
+           a=b;
+           b=c;
+        }
+    }
+}
+ 
+palindrome with java-------------------->
+
+import java.util.*;
+public class switchcase {
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter a value ");
+        int num =sc.nextInt();
+        int original_num=num,remainder,reversed_num=0;
+        while(num!=0){
+          remainder=num%10;
+          reversed_num=reversed_num*10+remainder;
+          num=num/10; 
+        }
+        if(original_num==reversed_num){
+              System.out.println("palindrome");   
+        }
+        else{
+            System.out.println("not a palindrome");
+        }
+    }
+}
+
+Armstrong number check with java------------------------->
+
+import java.util.*;
+public class switchcase {
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter a value ");
+        int num =sc.nextInt();
+        int original_num=num,sum=0;
+        while(num!=0){
+          int n=num%10;
+          sum=sum+(n*n*n);
+          num=num/10;
+        }
+        if(original_num==sum){
+              System.out.println("armstrong");   
+        }
+        else{
+            System.out.println("not a armstrong");
+        }
+    }
+}
+
+reversed-number through java------------------------->
+
+import java.util.*;
+public class switchcase {
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter a value ");
+        int num =sc.nextInt();
+        while(num>0){
+            int reversed_num=num%10;
+            System.out.println(reversed_num);
+            num=num/10;
+        }
+    }
+}
+
+count of digit in number-----------------------
+
+import java.util.*;
+public class switchcase {
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter a value ");
+        int num =sc.nextInt();
+        int count=0;
+        while(num>0){
+            num=num/10;
+            count++;
+        }
+        System.out.println(count);
+    }
+}
+
+power calculator in java---------------------->
+
+import java.util.*;
+public class switchcase {
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter a value ");
+        int a =sc.nextInt();
+        System.out.println("enter a value ");
+        int b =sc.nextInt();
+        int i=1;
+        int ans=1;
+        while(i<=b){
+           ans=ans*a;
+           i++;
+        }
+        System.out.println(ans);
+    }
+}
+
+public class Counter {
+    // Static variable shared among all instances
+    private static int count = 0;
+
+    // Method to increment the count
+    public void increment() {
+        count++;
+    }
+
+    // Method to get the current value of count
+    public static int getCount() {
+        return count;
+    }
+
+    public static void main(String[] args) {
+        // Create multiple instances of Counter
+        Counter counter1 = new Counter();
+        Counter counter2 = new Counter();
+        Counter counter3 = new Counter();
+
+        // Increment count using different instances
+        counter1.increment();
+        System.out.println("Count after counter1 increment: " + Counter.getCount());
+
+        counter2.increment();
+        System.out.println("Count after counter2 increment: " + Counter.getCount());
+
+        counter3.increment();
+        System.out.println("Count after counter3 increment: " + Counter.getCount());
+
+        // Static count remains shared across all instances
+        System.out.println("Final count (shared by all instances): " + Counter.getCount());
+    }
+}
+
+
+public class arrayForLoop {
+    public static void main(String[] args) {
+        char a[]={'s','i','m','r','a','n'};
+        
+        int count=0;
+        for(int i=0;i<a.length;i++){
+          if(a[i]=='a'|| a[i]=='e'|| a[i]=='i'|| a[i]=='o' || a[i]=='u'){
+              System.out.println(a[i]);
+          }
+        }
+        
+    }
+}
+
+
+import java.util.*;
+public class arrayForLoop {
+    public static void main(String[] args) {
+        int a[]={1,2,3,4,5};
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter a number : ");
+        int num=sc.nextInt();
+        for(int i=0;i<a.length;i++){
+          if(a[i]==num){
+              System.out.println("present");
+          }
+    
+        
+    }
+    }
+}
+
+import java.util.*;
+public class arrayForLoop {
+    public static void main(String[] args) {
+        int a[]={1,2,3};
+        int b[]={1,2,3};
+        int sum[]=new int[a.length];
+        for(int i=0;i<a.length;i++){
+        sum[i]=a[i]+b[i];
+        System.out.println(sum[i]);
+    }
+    
+    }
+}
+
+public class arrayLoop{
+    public static void main(String[] args) {
+        int a[]={1,2,3,4,5};
+        int b[]={5,6,7,4,8};
+        int count=0;
+        for(int i=0;i<a.length;i++){
+            if(a[i]==b[i]){
+             System.out.println(a[i]);
+            }
+        }
+        System.out.println(count);
+    }
+}
+
+dublicate number--------------------------->
+
+public class arrayLoop{
+    public static void main(String[] args) {
+        int a[]={1,2,1,2,6,4};
+        for(int i=0;i<a.length;i++){
+            for(int j=i+1;j<a.length;j++){
+                if(a[i]==a[j]){
+             System.out.println(a[i]);
+                }
+            }
+            
+        }
+        
+    }
+}
+
+prime number through loop------------------------------>
+
+public class Test21Dec {
+    public static void main(String[] args) {
+      for(int number = 2; number <= 100; number++) {
+        int count=1;
+
+        for (int divisor = 2; divisor <= number / 2; divisor++) {
+            if (number % divisor == 0) {
+                count=0;
+            }
+        }
+        if (count==1) {
+            System.out.print(number + " ");
+        }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+

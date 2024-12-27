@@ -1,0 +1,121 @@
+1.interface :
+	no return and no argument 
+	no return and  argument 
+	 return and no argument 
+	 return and  argument 
+
+anymous inner class-------------------------------------->
+
+
+interface A{
+    void show1();
+    void show2(int a);
+    int show3();
+    int show4(int a);
+}
+public class anonymousclass {
+    public static void main(String[] args) {
+        A p=new A(){
+            public void show1(){
+                System.out.println("show-1");
+            }
+            public void show2(int a){
+                  System.out.println("show-2 "+a);
+            }
+            public int show3(){
+                int a=10;
+                System.out.println("show-3 "+a);
+                return a;
+            }
+            public int show4(int a){
+                 System.out.println("show-4 "+a);
+                 return a;
+            }
+        };
+       p.show1();
+       p.show2(78);
+       p.show3();
+       p.show4(45);
+    }
+}
+
+2.abstract :
+	no return and no argument 
+	no return and  argument 
+	 return and no argument 
+	 return and  argument 
+
+anonymous inner class--------------------------------------------------->
+
+abstract class A{
+    abstract void show1();
+    abstract void show2(int a);
+    abstract int show3();
+    abstract int show4(int a);
+}
+public class anonymousclass {
+    public static void main(String[] args) {
+        A p=new A(){
+             void show1(){
+                System.out.println("show-1");
+            }
+             void show2(int a){
+                  System.out.println("show-2 "+a);
+            }
+            int show3(){
+                int a=10;
+                System.out.println("show-3 "+a);
+                return a;
+            }
+            int show4(int a){
+                 System.out.println("show-4 "+a);
+                 return a;
+            }
+        };
+       p.show1();
+       p.show2(78);
+       p.show3();
+       p.show4(45);
+    }
+}
+
+3.static variable and non static :variable access :yes ---------------------------------->
+
+class A{
+    static int a=78;
+    void show(){
+        System.out.println("show "+a);
+    }
+}
+public class anonymousclass {
+    public static void main(String[] args) {
+        A p=new A();
+        p.show();
+    }
+}
+
+4.static variable and static method :variable access :yes--------------------------------> 
+
+class A{
+    static int a=78;
+     static void show(){
+        System.out.println("show "+a);
+    }
+}
+public class anonymousclass {
+    public static void main(String[] args) {
+        A.show();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

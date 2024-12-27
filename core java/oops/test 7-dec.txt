@@ -1,0 +1,145 @@
+1.class Person{
+   Person(String name){
+     System.out.println("Name of the person "+name);
+   }
+   Person(int age){
+      System.out.println("Age of the person "+age);
+   }
+}
+public class Testassignment {
+    public static void main(String[] args) {
+        new Person(78);
+        new Person("simran");
+    }
+}
+
+3.class Animal{
+   void eat(){
+    System.out.println("Animal is eating");
+   }
+}
+class dog extends Animal{
+    void bark(){
+        System.out.println("Dog is barking");
+    }
+}
+public class Testassignment {
+    public static void main(String[] args) {
+        dog p=new dog();
+        p.eat();
+        p.bark();
+    }
+}
+
+4. class shape{
+   public void area(){
+        System.out.println("calculating area of circle");
+    }
+ }
+ class circle extends shape{
+    float radius;
+    float pie=3.14f;
+    float area;
+    void Circle(float radius){
+       this.radius=radius;
+    }
+    public void area(){
+       area=pie*radius*radius;
+       System.out.println("area of circle  is : "+area);
+    }
+ }
+public class Testassignment1 {
+    public static void main(String[] args) {
+        circle p=new circle();
+        p.Circle(5.0f);
+        p.area();
+    }
+}
+
+5.interface flyable{
+    void fly();
+}
+interface swimmable{
+    void swim();
+}
+class duck implements flyable,swimmable{
+    public void fly(){
+        System.out.println("duck is flying");
+    }
+    public void swim(){
+        System.out.println("duck is swimming");
+    }
+}
+public class Testassignment1 {
+    public static void main(String[] args) {
+        duck p=new duck();
+        p.fly();
+        p.swim();
+    }
+}
+
+7. class bank{ 
+   double interestrate(){
+      return 0.0;
+   } 
+}
+class savingbank extends bank{
+    double interestrate(){
+        return 4.5;
+     } 
+}
+class loanbank extends bank{
+    double interestrate(){
+        return 3.0;
+     } 
+}
+public class Testassignment1 {
+    public static void main(String[] args) {
+        bank l=new bank();
+        System.out.println("interest rate of bank "+l.interestrate());
+        savingbank p=new savingbank();
+        System.out.println("saving bank interest rate "+p.interestrate());
+        loanbank k=new loanbank();
+        System.out.println("interest rate of loan bank "+k.interestrate());
+    }
+}
+8.interface scorable{
+    void score();
+}
+class cricket implements scorable{
+    public void score(){
+        System.out.println("score of cricket");
+    }
+}
+class football implements scorable{
+    public void score(){
+        System.out.println("score of football");
+    }
+}
+public class Testassignment1 {
+    public static void main(String[] args) {
+        cricket p=new cricket();
+        p.score();
+        football k=new football();
+        k.score();
+    }
+}
+
+9.abstract class vehicle{
+   int speed=100;
+   abstract void move();
+}
+class bike extends vehicle{
+     void move(){
+        System.out.println("bike is moving at speed : "+speed);
+     }
+}
+public class Testassignment1 {
+    public static void main(String[] args) {
+        bike p=new bike();
+        p.move();
+    }
+}
+
+
+

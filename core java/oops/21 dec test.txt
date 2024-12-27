@@ -1,0 +1,169 @@
+1.import java.util.*;
+public class Test21Dec {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter year : ");
+        int year=sc.nextInt();
+        System.out.println("Enter current year : ");
+        int currentYear=sc.nextInt();
+        int age=currentYear-year;
+        System.out.println("your age is : "+age);
+    }
+}
+
+5.interface employee{
+  void displayDetails(int id,String name);
+}
+class manager implements employee{
+  public void displayDetails(int id,String name){
+     System.out.println("Id of an employee : "+id);
+     System.out.println("name of an employee : "+name);
+  }
+}
+class clerk implements employee{
+  public void displayDetails(int id,String name){
+    System.out.println("Id of an employee : "+id);
+    System.out.println("name of an employee : "+name);
+ }
+}
+public class Test21Dec {
+    public static void main(String[] args) {
+        manager m=new manager();
+        m.displayDetails(56,"simran");
+        clerk c=new clerk();
+        c.displayDetails(78,"neha");
+  }
+}
+
+6.interface Item{
+  void checkout();
+  void returnItem();
+}
+class book implements Item{
+  public void checkout(){
+    System.out.println("Book is checkout");
+  }
+  public void returnItem(){
+    System.out.println("Book is returned");
+  }
+}
+class DVD implements Item{
+  public void checkout(){
+    System.out.println("dvd is checkout");
+  }
+  public void returnItem(){
+    System.out.println("dvd is returned");
+  }
+}
+public class Test21Dec {
+    public static void main(String[] args) {
+        book b=new book();
+        b.checkout();
+        b.returnItem();
+        DVD d=new DVD();
+        d.checkout();
+        d.returnItem();
+  }
+}
+
+
+
+7.class Rabbit{
+  void show1(String name){
+    System.out.println("Name of the animal : "+name);
+  }
+  void show2(String color){
+    System.out.println("Color of the animal : "+color);
+  }
+}
+class Lion extends Rabbit {
+  void show3(String name){
+    System.out.println("Name of the animal : "+name);
+  }
+  void show4(String color){
+    System.out.println("Color of the animal : "+color);
+  }
+}
+class panda extends Rabbit{
+  void show5(String name){
+    System.out.println("Name of the animal : "+name);
+  }
+  void show6(String color){
+    System.out.println("Color of the animal : "+color);
+  }
+}
+public class Test21Dec {
+    public static void main(String[] args) {
+        Lion l=new Lion();
+        l.show1("Rabbit");
+        l.show2("white");
+        l.show3("lion");
+        l.show4("yellow");
+        panda p=new panda();
+        p.show5("panda");
+        p.show6("black and white");
+  }
+}
+
+9.class car{
+  void show1(int model,String name){
+   System.out.println("Name of car : "+name);
+   System.out.println("model number : "+model);
+  }
+}
+class bicycle extends car {
+  void show2(int model,String name){
+    System.out.println("Name of bicycle : "+name);
+    System.out.println("model number : "+model);
+   }
+}
+class truck extends car{
+  void show3(int model,String name){
+    System.out.println("Name of truck : "+name);
+    System.out.println("model number : "+model);
+   }
+}
+public class Test21Dec {
+    public static void main(String[] args) {
+        bicycle p=new bicycle();
+        p.show1(2001,"audi");
+        p.show2(2002, "awm");
+        truck t=new truck();
+        t.show3(2003, "mercedes");
+  }
+}
+
+11.class vehicle{
+  void show1(String name,int price){
+   System.out.println("Name of the passenger : "+name);
+   System.out.println("Price of the tickets : "+price);
+  }
+}
+class bus extends vehicle {
+  void show2(String name,int price){
+    System.out.println("Name of the passenger : "+name);
+    System.out.println("Price of the tickets : "+price);
+   }
+}
+class  train extends vehicle{
+  void show3(String name,int price){
+    System.out.println("Name of the passenger : "+name);
+    System.out.println("Price of the tickets : "+price);
+   }
+}
+public class Test21Dec {
+    public static void main(String[] args) {
+        bus b=new bus();
+        b.show1("simran", 600);
+        b.show2("neha", 700);
+        train t=new train();
+        t.show3("prince", 670);
+  }
+}
+
+
+
+
+
+
+

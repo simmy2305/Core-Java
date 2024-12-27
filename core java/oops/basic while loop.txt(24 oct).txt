@@ -1,0 +1,328 @@
+1.
+  public class Basic {
+    public static void main(String[] args) {
+      for(int i=1;i<=100;i++){
+        System.out.println(i);
+      }  
+        
+}
+}
+
+2.public class Basic {
+    public static void main(String[] args) {
+      for(int i=100;i>=1;i--){
+        System.out.println(i+" ");
+      }  
+        
+}
+}
+
+3.public class Basic {
+    public static void main(String[] args) {
+        
+      for(int i=1;i<=100;i++){
+        if(i%2==0){
+            System.out.println(i+" ");
+        }
+        
+      }  
+        
+}
+}
+
+4.public class Basic {
+    public static void main(String[] args) {
+        
+      for(int i=100;i>=1;i--){
+        if(i%2==0){
+            System.out.print(i+" ");
+        }
+        
+      }  
+        
+}
+}
+
+5.public class Basic {
+    public static void main(String[] args) {
+        
+      for(int i=1;i<=100;i++){
+        if(i%2!=0){
+            System.out.print(i+" ");
+        }
+        
+      }  
+        
+}
+}
+
+6.public class Basic {
+    public static void main(String[] args) {
+        
+      for(int i=50;i<=500;i++){
+            System.out.print(i+" ");
+        
+      }  
+        
+}
+}
+
+7.public class Basic {
+    public static void main(String[] args) {
+        
+      for(int i=500;i>=50;i--){
+            System.out.print(i+" ");
+        
+      }  
+        
+}
+}
+
+8.public class Basic {
+    public static void main(String[] args) {
+        
+      for(int i=50;i<=1000;i++){
+           if(i%2==0){
+            System.out.print(i+" ");
+           }
+            
+        
+      }  
+        
+}
+}
+
+9.import java.util.*;
+public class Basic {
+    public static void main(String[] args) {
+     Scanner sc = new Scanner(System.in);
+     System.out.println("enter first number : ");
+     int a=sc.nextInt();
+     System.out.println("enter a range upto : ");
+     int b=sc.nextInt();
+      for(int i=a;i<=b;i++){
+            System.out.print(i+" ");
+      }  
+        
+}
+}
+
+
+10.import java.util.*;
+public class Basic {
+    public static void main(String[] args) {
+     Scanner sc = new Scanner(System.in);
+     System.out.println("enter first number : ");
+     int a=sc.nextInt();
+     System.out.println("enter a range upto : ");
+     int b=sc.nextInt();
+      for(int i=a;i<=b;i++){
+           if(i%2==0){
+            System.out.print(i+" ");
+           }
+            
+      }  
+        
+}
+}
+
+11.import java.util.*;
+public class Basic {
+    public static void main(String[] args) {
+     Scanner sc = new Scanner(System.in);
+     System.out.println("enter first number : ");
+     int a=sc.nextInt();
+     System.out.println("enter a range upto : ");
+     int b=sc.nextInt();
+      for(int i=a;i<=b;i++){
+           if(i%2!=0){
+            System.out.print(i+" ");
+           }
+            
+      }  
+        
+}
+}
+
+12.import java.util.*;
+public class Basic {
+    public static void main(String[] args) {
+        int sum=0;
+      for(int i=1;i<=10;i++){
+            sum=sum+i;
+      }  
+     System.out.println(sum);
+        
+}
+}
+
+13.import java.util.*;
+public class Basic {
+    public static void main(String[] args) {
+      for(int i=1;i<=10;i++){
+            System.out.println("2 x "+i+"="+2*i);
+      }  
+        
+}
+}
+
+14.import java.util.*;
+public class Basic {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter a number : ");
+        int a=sc.nextInt();
+      for(int i=1;i<=10;i++){
+            System.out.println(a+"x "+i+"="+2*i);
+      }  
+        
+}
+}
+
+15.import java.util.*;
+public class Basic {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter first number : ");
+        int a=sc.nextInt();
+        System.out.println("enter a range up to : ");
+        int b=sc.nextInt();
+       while(a<=b){
+        int c=1;
+        while(c<=10){
+           System.out.println(a*c+"");
+           c++;
+        }
+        a++;
+       } 
+       System.out.println(); 
+}
+}
+
+16.import java.util.*;
+public class Basic {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+      for(int i=1;i<=100;i++){
+          if(i%7==0 && i%3==0){
+            System.out.println(i+" is divisible by both 7 and 3");
+          }
+            
+      }  
+        
+}
+}
+
+17.import java.util.*;
+public class Basic {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+      for(int i=1;i<=100;i++){
+          if(i%5==0 && i%11==0){
+            System.out.println(i+" is divisible by both 5 and 11");
+          }
+            
+      }  
+        
+}
+}
+
+
+18.import java.util.*;
+public class Basic {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+      for(int i=100;i>=1;i--){
+          if(i%5==0 && i%11==0){
+            System.out.println(i+" is divisible by both 5 and 11");
+          }
+            
+      }  
+        
+}
+}
+
+19.public class Basic {
+
+    public static void main (String[] args){
+        for(int i=10;i>=1;i--){
+            System.out.println("2 x "+i+" ="+2*i);
+        }
+    }
+}
+
+20.import java.util.*;
+public class Basic {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter first number : ");
+        int n=sc.nextInt();
+        System.out.println("enter second number :");
+        int m=sc.nextInt();
+      for(int i=100;i>=1;i--){
+          if(i%n==0 && i%m==0){
+            System.out.println(i+" is divisible by both "+ n +" and "+m);
+          }
+            
+      }  
+        
+}
+}
+
+21.import java.util.*;
+public class Basic {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter a number : ");
+        int n=sc.nextInt();
+            for(int i=2;i<=n;i++){
+                System.out.println(i+" x "+1+" = "+i*1);
+            }
+      }  
+        
+}
+
+22.import java.util.*;
+public class Basic {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int sum=0;
+        for(int i=1;i<=100;i++){
+            if(i%2==0){
+                sum=sum+i;
+            }
+        }
+        System.out.println("sum of all even number between 1 to 100 = "+sum);  
+      }  
+        
+}
+
+23.import java.util.*;
+public class Basic {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int sum=0;
+        for(int i=1;i<=100;i++){
+            if(i%2!=0){
+                sum=sum+i;
+            }
+        }
+        System.out.println("sum of all odd number between 1 to 100 = "+sum);  
+      }  
+        
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

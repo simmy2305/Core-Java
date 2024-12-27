@@ -1,0 +1,205 @@
+1.abstract class A{
+   abstract int show1(int a);
+   int show2(){
+    int a=10;
+    System.out.println("show 2 "+a);
+    return a;
+   }
+}
+class B extends A{
+    int show1(int a){
+      System.out.println("show 1 "+a);
+      return a;
+    }
+}
+public class constructorchaining {
+    public static void main(String[] args){
+       B p=new B();
+       p.show1(45);
+       p.show2();
+    }
+}
+
+2.abstract class A{
+    abstract int show1(int a);
+    A show2(){
+       System.out.println("This is covariant class");
+       return this;
+    }
+ }
+ class B extends A{
+     int show1(int a){
+       System.out.println("show 1 "+a);
+       return a;
+     }
+     void method1(){
+         System.out.println("reference variable call");
+     }
+ }
+ public class constructorchaining {
+     public static void main(String[] args){
+        A p=new B();
+        p.show1(45);
+        p.show2();
+        B s=new B();
+        s.method1();
+     }
+ }
+
+3.abstract class A{
+    A(int a){
+       System.out.println(a);
+    }
+    abstract void show1(int a);
+    void show2(int a){
+      System.out.println(a);
+    }
+ }
+ class B extends A{
+    B(int a){
+        super(56);
+    }
+     void show1(int a){
+       System.out.println("show 1 "+a);
+     }
+     void method1(){
+         System.out.println("reference variable call");
+     }
+ }
+ public class constructorchaining {
+     public static void main(String[] args){
+        A p=new B(90);
+        p.show1(45);
+        p.show2(56);
+        B s=new B(78);
+        s.method1();
+     }
+ }
+
+4.abstract class A{
+    void show1(int a){
+       System.out.println("show 1 "+a);
+    }
+    void show1(){
+        System.out.println("show 1");
+    }
+    abstract void show2();
+ }
+ class B extends A{
+     void show2(){
+       System.out.println("show 2");
+     }
+ }
+ public class constructorchaining {
+     public static void main(String[] args){
+        B p=new B();
+        p.show1(78);
+        p.show1();
+        p.show2();
+     }
+ }
+
+5.abstract class A{
+     void show1(){
+        System.out.println("show-1");
+     }
+ }
+ abstract class B {
+    void show2(){
+        System.out.println("show-2");
+     }
+ }
+ abstract class C {
+    void show3(){
+        System.out.println("show-3");
+     }
+ }
+ abstract class D {
+    void show4(){
+        System.out.println("show-4");
+     }
+ }
+  
+ class E extends D{
+     void show5(){
+        System.out.println("show-5");
+     }
+ }
+ class F extends B{
+    void show6(){
+        System.out.println("show-6");
+     }
+ }
+ class G extends C{
+    void show7(){
+        System.out.println("show-7");
+     }
+ }
+ class H extends A{
+    void show8(){
+        System.out.println("show-8");
+     }
+ }
+ public class constructorchaining {
+     public static void main(String[] args){
+            E p=new E();
+            p.show4();
+            p.show5();
+            F s=new F();
+            s.show2();
+            s.show6();
+            G k=new G();
+            k.show3();
+            k.show7();
+            H l=new H();
+            l.show1();
+            l.show8();
+     }
+ }
+
+6.abstract class A{
+     void show1(){
+        System.out.println("show-1");
+     }
+ }
+ abstract class B extends A {
+    void show2(){
+        System.out.println("show-2");
+     }
+ }
+ abstract class C extends B {
+    void show3(){
+        System.out.println("show-3");
+     }
+ }
+ abstract class D extends C {
+    void show4(){
+        System.out.println("show-4");
+     }
+ }
+  
+ class E extends D{
+     void show5(){
+        System.out.println("show-5");
+     }
+ }
+ 
+ public class constructorchaining {
+     public static void main(String[] args){
+            E p=new E();
+            p.show1();
+            p.show2();
+            p.show3();
+            p.show4();
+            p.show5();
+
+     }
+ }
+
+
+
+
+
+
+
+

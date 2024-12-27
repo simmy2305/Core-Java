@@ -1,0 +1,149 @@
+1.import java.util.*;
+abstract class A{
+   abstract int show1(int a);
+}
+class B extends A{
+      int show1(int a){
+      System.out.println("value of a is : "+a);
+      return a;
+    }
+}
+
+public class userinputabstract {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter value  of a");
+        int a =sc.nextInt();
+        B p=new B();
+        p.show1(a);
+    }
+}
+
+2.can we make private abstract method in java [not possible ]--------------------------->
+
+abstract class A{
+   abstract priavte void show();
+}
+class B extends A{
+    
+}
+
+public class userinputabstract {
+    public static void main(String[] args) {
+        B p=new B();
+        p.show();
+    }
+}
+
+
+3.can we make protected abstract method in java[possible]--------------------------->
+
+abstract class A{
+   abstract protected void show();
+}
+class B extends A{
+   protected void show(){
+    System.out.println("protected abstract method");
+   }
+}
+
+public class userinputabstract {
+    public static void main(String[] args) {
+        B p=new B();
+        p.show();
+    }
+}
+
+4.can we make public abstract method in java[possible]------------------------------->
+
+abstract class A{
+   abstract public void show();
+}
+class B extends A{
+   public void show(){
+    System.out.println("public abstract method");
+   }
+}
+
+public class userinputabstract {
+    public static void main(String[] args) {
+        B p=new B();
+        p.show();
+    }
+}
+
+5.can we make instance varaibles in abstract class how to access to another class[possible] ---------------------->
+
+abstract class A{
+    int num=10;
+   abstract void show();
+}
+class B extends A{
+    void show(){
+    System.out.println("instance variable "+num);
+   }
+}
+
+public class userinputabstract {
+    public static void main(String[] args) {
+        B p=new B();
+        p.show();
+    }
+}
+
+6.can we make public instance varaibles in abstract class how to access to another class[possible] --------------------->
+
+abstract class A{
+   public int num=10;
+   abstract void show();
+}
+class B extends A{
+    void show(){
+    System.out.println(" public instance variable "+num);
+   }
+}
+
+public class userinputabstract {
+    public static void main(String[] args) {
+        B p=new B();
+        p.show();
+    }
+}
+
+7.can we make private instance varaibles in abstract class how to access to another class[possible upto the single level] ------------------------->
+
+abstract class A{
+   protected int num=10;
+   abstract void show();
+}
+class B extends A{
+    void show(){
+    System.out.println(" protected instance variable "+num);
+   }
+}
+
+public class userinputabstract {
+    public static void main(String[] args) {
+        B p=new B();
+        p.show();
+    }
+}
+
+8.can we make protected instance varaibles in abstract class how to access to another class [not possible]----------------------->
+
+abstract class A{
+   private int num=10;
+   abstract void show();
+}
+class B extends A{
+    void show(){
+    System.out.println(" private instance variable "+num);
+   }
+}
+
+public class userinputabstract {
+    public static void main(String[] args) {
+        B p=new B();
+        p.show();
+    }
+}

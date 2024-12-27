@@ -1,0 +1,365 @@
+1. #include <stdio.h>
+
+int main()
+{
+    int num1,num2;
+    int sum,sub,multiplication,division,modulus;
+    printf("Enter first number = ");
+    scanf("%d",&num1);
+    printf("Enter second number = ");
+    scanf("%d",&num2);
+    
+    //Addition
+    sum=num1+num2;
+    printf("sum of %d and %d is = %d \n",num1,num2,sum);
+    //subraction
+    sub=num1-num2;
+    printf("sub of %d and %d is = %d \n",num1,num2,sub);
+    //multiplication
+    multiplication=num1*num2;
+    printf("multiplication of %d and %d is = %d \n",num1,num2,multiplication);
+    //division
+    division=num1/num2;
+    printf("division of %d and %d is = %d \n",num1,num2,division);
+    //modulus
+    modulus=num1%num2;
+    printf("modulus of %d and %d is = %d",num1,num2,modulus);
+    
+    
+    return 0;
+}
+
+2. #include <stdio.h>
+
+int main() {
+    
+    int num1, num2;
+
+    printf("Enter the first number: ");
+    scanf("%d", &num1);
+
+    printf("Enter the second number: ");
+    scanf("%d", &num2);
+
+    printf("Comparing %d and %d:\n", num1, num2);
+    
+    if(num1==num2){
+        
+        printf("%d == %d : true \n ",num1,num2);
+    }
+    else{
+        
+        printf("%d == %d : false \n",num1,num2);
+    }
+    
+     if(num1!=num2){
+        
+        printf("%d != %d : true \n",num1,num2);
+    }
+    else{
+        
+        printf("%d != %d : false \n",num1,num2);
+    }
+    
+     if(num1>num2){
+        
+        printf("%d > %d : true \n",num1,num2);
+    }
+    else{
+        
+        printf("%d > %d : false \n",num1,num2);
+    }
+    
+     if(num1<num2){
+        
+        printf("%d < %d : true \n",num1,num2);
+    }
+    else{
+        
+        printf("%d < %d : false \n",num1,num2);
+    }
+    
+     if(num1>=num2){
+        
+        printf("%d >= %d : true \n",num1,num2);
+    }
+    else{
+        
+        printf("%d >= %d : false \n",num1,num2);
+    }
+    
+     if(num1<=num2){
+        
+        printf("%d <= %d : true \n",num1,num2);
+    }
+    else{
+        
+        printf("%d <= %d : false \n",num1,num2);
+    }
+    
+    
+     return 0;
+}
+
+3. #include <stdio.h>
+
+int main() {
+    
+    int num1, num2;
+
+    printf("Enter the first number: ");
+    scanf("%d", &num1);
+
+    printf("Enter the second number: ");
+    scanf("%d", &num2);
+
+    printf("Comparing %d and %d:\n", num1, num2);
+    
+    printf("comparing with AND logical operator \n");
+    if(num1>5 && num2>5){
+        
+        printf("true \n ");
+    }
+    else{
+        
+        printf("false \n");
+    }
+    
+    printf("comparing with OR logical operator \n");
+    
+     if(num1>5 || num2>5){
+        
+        printf("true \n");
+    }
+    else{
+        
+        printf("false \n");
+    }
+    
+    printf("comparing with NOT logical operator \n");
+    
+    if(!(num1>num2)){
+    
+        printf("true \n");
+        
+    }
+    else{
+        printf("false");
+    }
+    
+     return 0;
+}
+
+4. #include <stdio.h>
+
+int main() {
+    
+    int input;
+
+    printf("Enter a number: ");
+    scanf("%d", &input);
+
+    if(input%2==0){
+        printf("even");
+    }
+    else{
+        printf("odd");
+    }
+    
+    
+     return 0;
+}
+
+5. #include <stdio.h>
+
+int main() {
+    
+    int num1, num2,num3;
+
+    printf("Enter first number: ");
+    scanf("%d", &num1);
+    
+    printf("Enter second number: ");
+    scanf("%d", &num2);
+    
+    printf("Enter third number: ");
+    scanf("%d", &num3);
+
+
+    if(num1>num2 && num1>num3){
+        printf("first is the largest number");
+    }
+    else if(num2>num1 && num2>num3){
+        printf("second is the largest number");
+    }
+    else if(num3>num1 && num3>num2){
+        printf("third  number is the largest");
+    }
+    
+    
+     return 0;
+}
+
+6. #include <stdio.h>
+
+int main() {
+    
+    int year;
+
+    printf("Enter a year: ");
+    scanf("%d", &year);
+
+    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+        printf("%d is a leap year.\n", year);
+    } else {
+        printf("%d is not a leap year.\n", year);
+    }
+    
+    
+     return 0;
+}
+
+7. #include <stdio.h>
+
+        int main() {
+
+	int percentage;
+
+	printf("Enter a percentage: ");
+	scanf("%d", &percentage);
+
+	if(percentage >= 90)
+	{
+
+		printf("Grade A");
+
+	}
+
+	else if(percentage >= 80)
+	{
+       printf("Grade B"); 
+	}
+
+
+	return 0;
+}
+
+8. 
+
+
+
+
+9. #include <stdio.h>
+
+    int main() {
+
+	int input;
+
+	printf("Enter a number: ");
+	scanf("%d", &input);
+
+	if(input < 0)
+	{
+
+		printf("Negative");
+
+	}
+
+	else if(input == 0)
+	{
+       printf("Zero"); 
+	}
+    
+    else if(input > 0){
+        printf("Positive");
+    }
+
+	return 0;
+}
+
+10. 
+
+
+
+
+11. #include <stdio.h>
+
+int main() {
+
+	int input;
+
+	printf("Enter a number: ");
+	scanf("%d", &input);
+
+	if(input%5==0 && input%11==0)
+	{
+
+		printf("This number is divisible by both 5 and 11");
+
+	}
+	else{
+	    
+	    printf("This  number is not divisible by both 5 and 11");
+	}
+
+
+	return 0;
+}
+
+12. 
+
+
+
+
+
+
+
+
+13.
+
+
+
+
+
+
+14.#include <stdio.h>
+
+int main() {
+
+	int age;
+
+	printf("Enter your age: ");
+	scanf("%d", &age);
+
+	if(age>=18)
+	{
+
+		printf("you are eligible for voting");
+
+	}
+	else{
+	    
+	    printf("you are not eligible for voting");
+	}
+
+
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

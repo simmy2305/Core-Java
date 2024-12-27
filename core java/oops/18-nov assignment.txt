@@ -1,0 +1,241 @@
+1.number of parameter same (method overloading happened)--------------------------------->
+
+class A{
+    void show(){
+        System.out.println("A class ");
+    }
+    void show(){
+        System.out.println("B class");
+    }
+}
+
+public class polymorphism {
+    public static void main(String[] args) {
+        A p=new A();
+        p.show();
+    }
+}
+
+number of parameter different (no method overloading)--------------------------------->
+
+class A{
+    void show(int a){
+        System.out.println("A class ");
+    }
+    void show(){
+        System.out.println("B class");
+    }
+}
+
+public class polymorphism {
+    public static void main(String[] args) {
+        A p=new A();
+        p.show();
+    }
+}
+
+number of parameter same return change of method (method overloading happened)---------------------->
+
+class A{
+    void show(){
+        System.out.println("A class ");
+    }
+    int show(){
+        System.out.println("B class");
+    }
+}
+
+public class polymorphism {
+    public static void main(String[] args) {
+        A p=new A();
+        p.show();
+    }
+}
+
+number of parameter different return type different(no method overloading)-------------------------->
+
+class A{
+    void show(){
+        System.out.println("A class ");
+    }
+    int show(int a){
+        System.out.println("B class");
+        return a;
+    }
+}
+
+public class polymorphism {
+    public static void main(String[] args) {
+        A p=new A();
+        p.show();
+    }
+}
+
+number of parameter same but return of parameter different (no method overloading)------------------------------------>
+
+class A{
+    void show(int a ){
+        System.out.println("A class ");
+    }
+    void show(float a){
+        System.out.println("B class");
+    }
+}
+
+public class polymorphism {
+    public static void main(String[] args) {
+        A p=new A();
+        p.show(45);
+    }
+}
+
+2.single level overloading-------------------------------->
+
+class A{
+    void show1(){
+        System.out.println(" first show1");
+    }
+    void show1(int a){
+        System.out.println(" second show1 "+a);
+    }
+}
+class B extends A{
+    void show2(int a){
+        System.out.println(" first show2 "+a);
+    }
+    void show2(){
+        System.out.println(" second show2");
+    }
+}
+public class constructorchaining {
+    public static void main(String[] args){
+        B p=new B();
+        p.show1(45);
+        p.show2(56);
+    }
+}
+3.multilevel overloading------------------------------------>
+
+class A{
+    void show1(){
+        System.out.println(" first show1");
+    }
+    void show1(int a){
+        System.out.println(" second show1 "+a);
+    }
+}
+class B extends A{
+    void show2(int a){
+        System.out.println(" first show2 "+a);
+    }
+    void show2(){
+        System.out.println(" second show2");
+    }
+}
+class C extends B{
+     void show3(int a){
+        System.out.println("first show3 "+a);
+     }
+     void show3(){
+        System.out.println("second show3");
+     }
+}
+public class constructorchaining {
+    public static void main(String[] args){
+        C p=new C();
+        p.show1(45);
+        p.show2(56);
+        p.show3(67);
+    }
+}
+
+4.heirarichal method overloading------------------------------------------>
+
+class A{
+    void show1(){
+        System.out.println(" first show1");
+    }
+    void show1(int a){
+        System.out.println(" second show1 "+a);
+    }
+}
+class B extends A{
+    void show2(int a){
+        System.out.println(" first show2 "+a);
+    }
+    void show2(){
+        System.out.println(" second show2");
+    }
+}
+class C extends A{
+     void show3(int a){
+        System.out.println("first show3 "+a);
+     }
+     void show3(){
+        System.out.println("second show3");
+     }
+}
+public class constructorchaining {
+    public static void main(String[] args){
+        B s=new B();
+        s.show2(67);
+        C p=new C();
+        p.show1(45);
+        p.show3(67);
+    }
+}
+
+5.constructor overloading----------------------->
+[number of parameter but return type of parameter change]
+
+class A{
+   A(int a){
+      System.out.println("A class constructor "+a);
+   }
+   A(float a){
+     System.out.println("B class constructor "+a);
+   }
+}
+public class constructorchaining {
+    public static void main(String[] args){
+        new A(56);
+        new A(5.7f);
+    }
+}
+
+6.
+class A{
+   A(int a){
+      System.out.println("A class constructor "+a);
+   }
+   A(float a){
+     System.out.println("B class constructor "+a);
+   }
+}
+class B extends A{
+    B(){
+        super(56);
+    }
+    void show(int a){
+        System.out.println("show 1 "+a);
+    }
+    void show(){
+        System.out.println("show 2");
+    }
+}
+public class constructorchaining {
+    public static void main(String[] args){
+       B p=new B();
+       p.show(56);
+    }
+}
+
+
+
+
+
+ 
+
+
+
+

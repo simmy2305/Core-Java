@@ -1,0 +1,578 @@
+through function  return and  argument --------------------------->
+
+addition-------------->
+
+#include<stdio.h>
+int add(int a ,int b);
+int main(){
+    int a;
+    int b;
+    printf("Enter first number : ");
+    scanf("%d",&a);
+    printf("Enter second number : ");
+    scanf("%d",&b);
+    printf("%d",add(a,b));
+    return 0;
+}
+int add(int a,int b){
+    
+    int c=a+b;
+    return c;
+}
+
+subraction---------------->
+
+#include<stdio.h>
+int sub(int a ,int b);
+int main(){
+    int a;
+    int b;
+    printf("Enter first number : ");
+    scanf("%d",&a);
+    printf("Enter second number : ");
+    scanf("%d",&b);
+    printf("%d",sub(a,b));
+    return 0;
+}
+int sub(int a,int b){
+    
+    int c=a-b;
+    return c;
+}
+
+multiplication----------------->
+
+#include<stdio.h>
+int multi(int a ,int b);
+int main(){
+    int a;
+    int b;
+    printf("Enter first number : ");
+    scanf("%d",&a);
+    printf("Enter second number : ");
+    scanf("%d",&b);
+    printf("%d",multi(a,b));
+    return 0;
+}
+int multi(int a,int b){
+    
+    int c=a*b;
+    return c;
+}
+
+
+division-------------------------->
+
+#include<stdio.h>
+int division(int a ,int b);
+int main(){
+    int a;
+    int b;
+    printf("Enter first number : ");
+    scanf("%d",&a);
+    printf("Enter second number : ");
+    scanf("%d",&b);
+    printf("%d",division(a,b));
+    return 0;
+}
+int division(int a,int b){
+    
+    int c=a/b;
+    return c;
+}
+
+modulus-------------------------->
+
+#include<stdio.h>
+int mod(int a ,int b);
+int main(){
+    int a;
+    int b;
+    printf("Enter first number : ");
+    scanf("%d",&a);
+    printf("Enter second number : ");
+    scanf("%d",&b);
+    printf("%d",mod(a,b));
+    return 0;
+}
+int mod(int a,int b){
+    
+    int c=a%b;
+    return c;
+}
+
+even number------------------------->
+
+#include<stdio.h>
+int even(int a);
+int main(){
+    int a;
+    printf("Enter a number : ");
+    scanf("%d",&a);
+    even(a);
+  
+    return 0;
+}
+int even(int a){
+    
+    if(a%2==0){
+        printf("even number");
+    }
+    else{
+        printf("Not an even number");
+    }
+    return a;
+}
+
+voterid---------------------------->
+
+#include<stdio.h>
+int voter_id(int age);
+int main(){
+    int age;
+    printf("Enter your age : ");
+    scanf("%d",&age);
+    voter_id(age);
+  
+    return 0;
+}
+int voter_id(int age){
+    
+    if(age>=18){
+        printf("Eligible for voting");
+    }
+    else{
+        printf("Not eligible");
+    }
+}
+
+marksheet-------------------------------->
+
+#include<stdio.h>
+int marksheet(int marks);
+int main(){
+    int marks;
+    printf("Enter your marks : ");
+    scanf("%d",&marks);
+    marksheet(marks);
+  
+    return 0;
+}
+int marksheet(int marks){
+    
+    if(marks>=90){
+         
+         printf("A");
+     }
+     else if(marks>=80){
+         printf("B");
+     }
+     else if(marks>=70){
+         printf("c");
+     }
+     else if(marks>=60){
+         printf("D");
+     }
+     else if(marks<=59){
+         printf("Fail");
+     }
+    return marks;
+}
+
+three numbers sum--------------->
+
+#include<stdio.h>
+int maximum_num(int num1,int num2,int num3);
+int main(){
+    
+    int num1,num2,num3;
+    printf("Enter first number : ");
+    scanf("%d",&num1);
+    printf("Enter second number :");
+    scanf("%d",&num2);
+    printf("Enter third number : ");
+    scanf("%d",&num3);
+    
+    maximum_num(num1,num2,num3);
+  
+    return 0;
+}
+int maximum_num(int num1,int num2,int num3){
+    
+    
+    if(num1>num2 && num1>num3){
+        printf("%d is greater",num1);
+    }
+    else if(num2>num1 && num2>num3){
+        printf("%d is greater",num2);
+    }
+    else if(num3>num1 && num3>num2){
+        printf("%d is greater",num3);
+    }
+    return num1,num2,num3;
+}
+
+
+electricity bill------------------------------>
+
+#include<stdio.h>
+int bill(int unit);
+int main(){
+    int unit;
+    printf("enter your unit :");
+    scanf("%d",&unit);
+    bill(unit);
+  
+    return 0;
+}
+int bill(int unit){
+    
+     int total=unit*10;
+     printf("your total bill is : %d",total);
+    return unit;
+
+}
+
+tax calculator---------------------------------->
+
+#include<stdio.h>
+int tax_calculator(float tax,int income);
+int main(){
+    float tax=0,income;
+
+    printf ("enter your income : ");
+    scanf ("%f", &income);
+    tax_calculator(tax,income);
+  
+    return 0;
+}
+int tax_calculator(float tax,int income){
+    
+     
+    if (income >= 250000 && income <= 500000)
+    {
+        tax = tax + 0.05 * (income - 250000);
+    }
+
+    if (income >= 500000 && income <= 1000000)
+    {
+        tax = tax + 0.20 * (income - 500000);
+    }
+
+    if (income >= 1000000)
+    {
+        tax = tax + 0.30 * (income - 1000000);
+    }
+
+    printf ("your net income tax to be paid is %f \n", tax);
+    
+    return tax,income;
+
+}
+
+number swaping---------------------------------->
+
+#include<stdio.h>
+int swap(int a, int b);
+int main(){
+    int a,b;
+    printf("enter a :");
+    scanf("%d",&a);
+    printf("enter b :");
+    scanf("%d",&b);
+    swap(a,b);
+  
+    return 0;
+}
+int swap(int a,int b){
+    
+    int sum=a+b;
+    a=sum-a;
+    b=sum-b;
+    printf("value of a after swaping a =%d\n",a);
+    printf("value of b after swaping b =%d",b);
+    return a,b;
+    
+
+}
+
+number swaping using third variable-------------------->
+
+#include<stdio.h>
+int swap(int a,int b,int c);
+int main(){
+    int a,b,c;
+    printf("enter a :");
+    scanf("%d",&a);
+    printf("enter b :");
+    scanf("%d",&b);
+    swap(a,b,c);
+  
+    return 0;
+}
+int swap(int a,int b,int c){
+    
+    c=a;
+    a=b;
+    b=c;
+    printf("value of a after swaping a =%d\n",a);
+    printf("value of b after swaping b =%d",b);
+    return a,b,c;
+}
+
+
+temperature------------------------------->
+
+#include<stdio.h>
+int temp(float celsius,int fahrenheit);
+int main(){
+    
+    float celsius, fahrenheit;
+    
+    printf("Enter temperature in Celsius: ");
+    scanf("%f", &celsius);
+    temp(celsius,fahrenheit);
+  
+    return 0;
+}
+int temp(float celsius,int fahrenheit){
+    
+
+    fahrenheit = (celsius * 9 / 5) + 32;
+
+    printf("%.2f Celsius = %d Fahrenheit", celsius, fahrenheit);
+    return celsius,fahrenheit;
+
+}
+
+salary calculation---------------------------------->
+
+#include<stdio.h>
+int salary(int salary_day,int total_salary);
+int main(){
+    
+    int salary_day,total_salary;
+    printf("Enter your salary per day : ");
+    scanf("%d",&salary_day);
+    salary(salary_day,total_salary);
+  
+    return 0;
+}
+int salary(int salary_day,int total_salary){
+    
+    total_salary=salary_day*30;
+    printf("your total salary per month is : %d",total_salary);
+    return salary_day,total_salary;
+
+}
+
+-----------------------------------------------------------------------s
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,184 @@
+1.forward{1,2,3,4,5,6,7,8,9,10}
+
+public class arrayForLoop {
+    public static void main(String[] args) {
+        int a[]={1,2,3,4,5,6,7,8,9,10};
+        for(int i=0;i<a.length;i++){
+           System.out.print(a[i]+" ");
+        }
+    }
+}
+
+
+2.backward{10,9,8,7,6,5,4,3,2,1}
+
+public class arrayForLoop {
+    public static void main(String[] args) {
+        int a[]={1,2,3,4,5,6,7,8,9,10};
+        for(int i=a.length-1;i>=0;i--){
+           System.out.print(a[i]+" ");
+        }
+    }
+}
+
+3.[5 4 3 2 1 6 7 8 9 10]------------------------------->
+
+public class arrayForLoop {
+    public static void main(String[] args) {
+        int a[]={1,2,3,4,5,6,7,8,9,10};
+        for(int i=a.length-6;i>=0;i--){
+           System.out.print(a[i]+" ");
+        }
+        for(int j=5;j<a.length;j++){
+        System.out.print(a[j]+" ");
+        }
+    }
+}
+
+4.[1 2 3 4 5 10 9 8 7 6] ------------------------------>
+
+public class arrayLoop{
+    public static void main(String[] args) {
+        int a[]={1,2,3,4,5,6,7,8,9,10};
+        for(int i=0;i<a.length-5;i++){
+        System.out.print(a[i]+" ");
+        }
+        for(int j=a.length-1;j>=5;j--){
+        System.out.print(a[j]+" ");
+        }
+    }
+}
+
+
+5.[5 4 3 2 1 10 9 8 7 6] ------------------------------->
+
+public class arrayLoop{
+    public static void main(String[] args) {
+        int a[]={1,2,3,4,5,6,7,8,9,10};
+        for(int i=a.length-6;i>=0;i--){
+        System.out.print(a[i]+" ");
+        }
+        for(int j=a.length-1;j>=5;j--){
+        System.out.print(a[j]+" ");
+        }
+    }
+}
+
+mid element--------------------------------------------------------->
+
+public class arrayLoop{
+    public static void main(String[] args) {
+        int a[]={1,2,3,4,5,6,7,8,9,10};
+        int size=a.length/2;
+        System.out.println("Middle element is : "+a[size]);
+    }
+}
+
+String :5 input 
+	output --------------------------------------------------------->
+
+public class arrayLoop{
+    public static void main(String[] args) {
+        char a[]={'s','i','m','m','y'};
+        for(int i=0;i<a.length;i++){
+         System.out.print(a[i]);
+        }
+    }
+}
+
+1,2,3,4,5,6,7,8,9,10
+
+even number --------------------------------------------------------->
+
+public class arrayLoop{
+    public static void main(String[] args) {
+        int a[]={1,2,3,4,5,6,7,8,9,10};
+        for(int i=0;i<a.length;i++){
+            if(i%2==0){
+            System.out.print(a[i]+" ");
+            }
+        }
+    }
+}
+
+1,2,3,4,5,6,7,8,9,10
+
+odd number --------------------------------------------------------->
+
+public class arrayLoop{
+    public static void main(String[] args) {
+        int a[]={1,2,3,4,5,6,7,8,9,10};
+        for(int i=0;i<a.length;i++){
+            if(i%2!=0){
+            System.out.print(a[i]+" ");
+            }
+        }
+    }
+}
+
+odd number even number --------------------------------------------------------->
+
+even number odd number --------------------------------------------------------->
+
+1,2,3,4,5,6,7,8,9,10
+
+2 4 7 9--------------------------------------------------------->
+
+public class arrayLoop{
+    public static void main(String[] args) {
+        int a[]={1,2,3,4,5,6,7,8,9,10};
+        for(int i=1;i<a.length-5;i++){
+            if(i%2!=0){
+            System.out.print(a[i]+" ");
+            }
+        }
+        for(int j=a.length-5;j<a.length;j++){
+           if(j%2==0){
+           System.out.print(a[j]+" ");
+           }
+        }
+    }
+}
+
+
+1,2,3,4,5,6,7,8,9,10
+
+1 3 5 6 8 10 --------------------------------------------------------->
+
+public class arrayLoop{
+    public static void main(String[] args) {
+        int a[]={1,2,3,4,5,6,7,8,9,10};
+        for(int i=0;i<a.length-5;i++){
+            if(i%2==0){
+            System.out.print(a[i]+" ");
+            }
+        }
+        for(int j=a.length-5;j<a.length;j++){
+           if(j%2!=0){
+           System.out.print(a[j]+" ");
+           }
+        }
+    }
+}
+
+even number reverse --------------------------------------------------------->
+
+public class arrayLoop{
+    public static void main(String[] args) {
+        int a[]={1,2,3,4,5,6,7,8,9,10};
+        for(int i=a.length-1;i>=0;i--){
+            if(i%2==0){
+            System.out.print(a[i]+" ");
+            }
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+

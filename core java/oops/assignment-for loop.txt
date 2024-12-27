@@ -1,0 +1,361 @@
+printing numbers from 1 to 100 in different cases------------------
+
+1. #include <stdio.h>
+
+int main()
+{   
+    for(int i=1; i<=100; i++)
+    {   
+        printf("%d ",i);
+       
+    }
+    
+
+    return 0;
+}
+
+2. #include <stdio.h>
+
+int main()
+{   
+    for(int i=100; i>=1; i--)
+    {   
+        printf("%d ",i);
+       
+    }
+    
+
+    return 0;
+}
+
+3. #include <stdio.h>
+
+int main()
+{   
+    for(int i=34; i<=78; i++)
+    {   
+        printf("%d ",i);
+       
+    }
+    
+
+    return 0;
+}
+
+4. #include <stdio.h>
+
+int main()
+{   
+    for(int i=98; i>=45; i--)
+    {   
+        printf("%d ",i);
+       
+    }
+    
+
+    return 0;
+}
+
+
+printing Even numbers-------------------------------
+
+5. #include <stdio.h>
+
+int main()
+{   
+    for(int i=1; i<=100; i++)
+    {   
+        if(i%2==0){
+            
+             printf("%d ",i);
+        }
+       
+    }
+    
+
+    return 0;
+}
+
+
+6. include <stdio.h>
+
+int main()
+{   
+    for(int i=100; i>=1; i--)
+    {   
+        if(i%2==0){
+            
+       printf("%d ",i);
+       
+        }
+    
+        
+    }
+
+    return 0;
+}
+
+
+7. #include <stdio.h>
+
+int main()
+{   
+    for(int i=34; i<=78; i++)
+    {   
+        if(i%2==0){
+            
+            printf("%d ",i);
+        }
+        
+    }
+    
+
+    return 0;
+}
+
+8. #include <stdio.h>
+
+int main()
+{   
+    for(int i=98; i>=45; i--)
+    {   
+        if(i%2==0){
+            
+             printf("%d ",i);
+        }
+       
+    }
+    
+
+    return 0;
+}
+
+printing odd numbers-------------------------------
+
+9. #include <stdio.h>
+
+int main()
+{   
+    for(int i=1; i<=100; i++)
+    {   
+        if(i%2!=0){
+            
+             printf("%d ",i);
+        }
+       
+    }
+    
+
+    return 0;
+}
+
+10. #include <stdio.h>
+
+int main()
+{   
+    for(int i=100; i>=1; i--)
+    {   
+        if(i%2!=0){
+            
+             printf("%d ",i);
+        }
+       
+    }
+    
+
+    return 0;
+}
+
+11. #include <stdio.h>
+
+int main()
+{   
+    for(int i=34; i<=78; i++)
+    {   
+        if(i%2!=0){
+            
+             printf("%d ",i);
+        }
+       
+    }
+    
+
+    return 0;
+}
+
+12. #include <stdio.h>
+
+int main()
+{   
+    for(int i=98; i>=45; i--)
+    {   
+        if(i%2!=0){
+            
+             printf("%d ",i);
+        }
+       
+    }
+    
+
+    return 0;
+}
+
+printing sum of even number from 1 to 100-----------------------
+
+13. #include <stdio.h>
+
+int main()
+{   
+    int sum;
+    for(int i=1; i<=100; i++)
+    {   
+        if(i%2==0){
+            
+            printf("%d ",i);
+            sum=sum+i;
+        }
+        
+       
+    }
+    printf("\n sum of even numbers from 1 to 100 is : %d",sum);
+    
+
+    return 0;
+}
+
+printing sum of odd numbers from 45 to 78------------
+
+14. #include <stdio.h>
+
+int main()
+{   
+    int sum;
+    for(int i=45; i<=78; i++)
+    {   
+        if(i%2!=0){
+            
+            printf("%d ",i);
+            sum=sum+i;
+        }
+        
+       
+    }
+    printf("\n sum of even numbers from 45 to 78 is : %d",sum);
+    
+
+    return 0;
+}
+
+
+15. #include <stdio.h>
+
+int main()
+{   
+    int num=5;
+    for(int i=1; i<=10; i++)
+    {
+        printf("%d x %d = %d \n",num,i,i*num);
+        
+    } 
+
+    return 0;
+}
+
+printing a loop -------------------------
+
+16. #include <stdio.h>
+
+int main()
+{   char input;
+    printf("Enter your input : ");
+    scanf("%c",&input);
+    
+    if(input=='a'){
+        for(int i=1;i<=10;i++){
+            printf("%d ",i);
+        }
+    }
+    else if(input=='b'){
+        for(int i=10;i>=1;i--){
+            printf("%d ",i);
+        }
+    }
+    else if(input=='c'){
+        for(int i=1;i<=10;i++){
+            if(i%2==0){
+              printf("%d ",i);  
+            }
+            
+        }
+    }
+    else if(input=='d'){
+        for(int i=10;i>=1;i--){
+            if(i%2!=0){
+                printf("%d ",i);
+            }
+            
+        }
+    }
+    else if(input=='e'){
+        int sum;
+        for(int i=34;i<=78;i++){
+            if(i%2==0){
+                sum=sum+i;
+            }
+        }
+        printf(" sum of even  number is : %d",sum);
+    }
+    else if(input=='f'){
+        int sum;
+        for(int i=90;i>=45;i--){
+            if(i%2!=0){
+              sum=sum+i;
+            }
+        }
+        printf("sum of odd numbers is : %d",sum);
+    }
+    
+    
+    
+    
+    
+    
+    return 0;
+}
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

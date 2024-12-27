@@ -1,0 +1,214 @@
+1.abstract class shape{
+     abstract void calculateArea();
+}
+class circle extends shape{
+    float radius;
+    float pie=3.14f;
+    float area1;
+    void setA(float radius){
+        this.radius=radius;
+    }
+    float getA(){
+        return radius;
+    }
+   public void calculateArea(){
+        area1=pie*radius*radius;
+        System.out.println("Area of circle is : "+area1);
+    }
+}
+class rectangle extends shape{
+    int length;
+    int breadth;
+    int area2;
+    void setA1(int length){
+      this.length=length;
+    }
+    int getA1(){
+      return length;
+    }
+    void setA2(int breadth){
+     this.breadth=breadth;
+    }
+    int getA2(){
+        return breadth;
+    }
+    public void calculateArea(){
+      area2=length*breadth;
+      System.out.println("Area of rectangle : "+area2);
+    }
+}
+public class Test14dec {
+    public static void main(String[] args) {
+        circle p=new circle();
+        p.setA(5.0f);
+        p.calculateArea();
+        rectangle k=new rectangle();
+        k.setA1(5);
+        k.setA2(2);
+        k.calculateArea();
+    }
+}
+
+2.interface vehicle{
+     void start();
+     void stop();
+}
+class car implements vehicle{
+    public void start(){
+      System.out.println("car started");
+    }
+    public void stop(){
+      System.out.println("car stop");
+    }
+}
+class bike implements vehicle{
+    public void start(){
+      System.out.println("bike started");
+    }
+    public void stop(){
+      System.out.println("bike stop");
+    }
+}
+public class Test14dec {
+    public static void main(String[] args) {
+        car p=new car();
+        p.start();
+        p.stop();
+        bike k=new bike();
+        k.start();
+        k.stop();
+    }
+}
+
+4.class employee{ 
+    String name;
+    int salary;
+     public void displayDetails(String name,int salary){
+       System.out.println("Name of the employee "+name);
+       System.out.println("Salary of the employee "+salary);
+     }
+}
+class manager extends employee{
+    String department;
+    public void displayDetails(String department){
+      System.out.println("Department of the employee "+department);
+    }
+}
+
+public class Test14dec {
+    public static void main(String[] args) {
+        manager p=new manager();
+        p.displayDetails("simran",50000);
+        p.displayDetails("Software developer");
+    }
+}
+
+5.class person{ 
+    String name;
+    int age;
+    String address;
+    void setA1(String name){
+      this.name=name;
+    }
+    String getA1(){
+        return name;
+    }
+    void setA2(int age){
+     this.age=age;
+    }
+    int getA2(){
+        return age;
+    }
+    void getA3(String address){
+        this.address=address;
+    }
+    String getA3(){
+        return address;
+    }
+}
+public class Test14dec {
+    public static void main(String[] args) {
+        person p=new person();
+        p.setA1("Simran");
+        p.setA2(22);
+        p.getA3("Jaipur");
+        System.out.println("Name of the person is : "+p.getA1());
+        System.out.println("Age of the person is : "+p.getA2());
+        System.out.println("Address of the person is : "+p.getA3());
+    }
+}
+7.class car{
+    final void drive(){
+        System.out.println("The car is driving");
+    }
+}
+class ElectricCar extends car{
+     final void drive(){
+        System.out.println("The car is driving");
+     }
+}
+public class Test14dec {
+    public static void main(String[] args) {
+        ElectricCar p=new ElectricCar();
+        p.drive();
+    }
+}
+
+error: drive() in ElectricCar cannot override drive() in car
+because we cannot define two methods with a same name in inheritance
+
+9.class Animal{
+    void speak(){
+        System.out.println("Animal speaks");
+    }
+}
+class dog extends Animal{
+     void speak(){
+        System.out.println("Dog barks");
+     }
+}
+class cat extends Animal{
+   void speak(){
+    System.out.println("Cat meows");
+   }
+}
+public class Test14dec {
+    public static void main(String[] args) {
+        dog d=new dog();
+        d.speak();
+        cat c=new cat();
+        c.speak();
+    }
+}
+
+10.class vehicle{
+    int model,year;
+    vehicle(int model, int year){
+     System.out.println("Name of the model : "+model);
+     System.out.println("Name of the year : "+year);
+    }
+}
+class car extends vehicle{
+    String engineType;
+    car( String engineType){
+        super(10, 2003);
+        System.out.println("Name of the engine : "+engineType);
+    }
+}
+
+public class Test14dec {
+    public static void main(String[] args) {
+        new car("Superturbo engine");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

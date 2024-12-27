@@ -1,0 +1,266 @@
+1. public class Basic {
+
+    public static void main (String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter your income : ");
+        int income=sc.nextInt();
+        if(income<=10000){
+            System.out.println("no tax");
+        }
+        else if(income<=30000){
+            System.out.println("10% tax");
+        }
+        else if(income<=50000){
+            System.out.println("20% tax");
+        }
+        else if(income>50000){
+            System.out.println("30% tax");
+        }
+    }
+}
+
+2.import java.util.Scanner;
+public class Basic {
+
+    public static void main (String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter your weight : ");
+        float weight=sc.nextFloat();
+        if(weight<18.5){
+            System.out.println("under weight");
+        }
+        else if(weight<=18.5 && weight<24.9){
+            System.out.println("normal weight");
+        }
+        else if(weight<=25 && weight<29.9){
+            System.out.println("over weight");
+        }
+        else if(weight>=30){
+            System.out.println("obesity");
+        }
+        
+        
+    }
+}
+
+3.import java.util.Scanner;
+public class Basic {
+
+    public static void main (String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter a year : ");
+        int year=sc.nextInt();
+        if(year%4==0 || year%400==0){
+            System.out.println("leap year");
+        }
+        else {
+            System.out.println("not a leap year ");
+        }
+        
+    }
+}
+
+4.import java.util.Scanner;
+public class Basic {
+
+    public static void main (String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter a time : ");
+        String time =sc.next();
+        if(time.equals ( "morning")){
+            System.out.println("good morning");
+        }
+        else if(time.equals("afternoon")){
+            System.out.println("good afternoon ");
+        }
+        else if(time.equals("evening")){
+            System.out.println("good evening");
+        }
+        
+    }
+}
+
+5.import java.util.Scanner;
+public class Basic {
+
+    public static void main (String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter your choice number from menu : ");
+        int choice =sc.nextInt();
+        if(choice==1){
+            System.out.println("Noodles:100 rupees");
+        }
+        else if(choice==2){
+            System.out.println("Momos:50 rupees");
+        }
+        else if(choice==3){
+            System.out.println("spring rolls:60 rupees");
+        }
+        
+    }
+}
+import java.util.Scanner;
+public class Basic {
+
+    public static void main (String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter temperature : ");
+        int temperature =sc.nextInt();
+        System.out.println("enter unit : ");
+        char unit =sc.next().charAt(0);
+        float fahrenheit = (unit * 9/5) + 32f;
+        float celcius = (unit - 32) * 5/9f;
+        if(unit=='c'){
+            System.out.println(fahrenheit+"f");
+        }
+        else if(unit=='f'){
+            System.out.println(celcius+"c");
+        }
+        else{
+            System.out.println("invalid input");
+        }
+        
+    }
+}
+
+      
+6.import java.util.Scanner;
+public class Basic {
+
+    public static void main (String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter temperature : ");
+        int temperature =sc.nextInt();
+        System.out.println("enter unit : ");
+        char unit =sc.next().charAt(0);
+        float fahrenheit = (unit * 9/5) + 32f;
+        float celcius = (unit - 32) * 5/9f;
+        if(unit=='c'){
+            System.out.println(fahrenheit+"f");
+        }
+        else if(unit=='f'){
+            System.out.println(celcius+"c");
+        }
+        else{
+            System.out.println("invalid input");
+        }
+        
+    }
+}
+6.import java.util.Scanner;
+public class Basic {
+
+    public static void main (String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter temperature : ");
+        int temperature =sc.nextInt();
+        System.out.println("enter unit : ");
+        char unit =sc.next().charAt(0);
+        float fahrenheit = (unit * 9/5) + 32f;
+        float celcius = (unit - 32) * 5/9f;
+        if(unit=='c'){
+            System.out.println(fahrenheit+"f");
+        }
+        else if(unit=='f'){
+            System.out.println(celcius+"c");
+        }
+        else{
+            System.out.println("invalid input");
+        }
+        
+    }
+}
+
+6.import java.util.Scanner;
+public class Basic {
+
+    public static void main (String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter temperature : ");
+        int temperature =sc.nextInt();
+        System.out.println("enter unit : ");
+        char unit =sc.next().charAt(0);
+        float fahrenheit = (unit * 9/5) + 32f;
+        float celcius = (unit - 32) * 5/9f;
+        if(unit=='c'){
+            System.out.println(fahrenheit+"f");
+        }
+        else if(unit=='f'){
+            System.out.println(celcius+"c");
+        }
+        else{
+            System.out.println("invalid input");
+        }
+        
+    }
+}
+
+7.import java.util.Scanner;
+public class Basic {
+
+    public static void main (String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter first number : ");
+        int a =sc.nextInt();
+        System.out.println("enter second number: ");
+        int b =sc.nextInt();
+        if(a>b){
+            System.out.println(a+" is greater");
+        }
+        else if(b>a){
+            System.out.println(b+" is greater");
+        }
+        else if(a==b){
+            System.out.println(a+" and "+b+" is equal");
+        }
+    }
+}
+
+8.import java.util.Scanner;
+public class Basic {
+
+    public static void main (String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter your age : ");
+        int age =sc.nextInt();
+        if(age<12){
+            System.out.println("50% discount");
+        }
+        else if(age>=65){
+            System.out.println("60% discount");
+        }
+    }
+}
+
+9.import java.util.Scanner;
+public class Basic {
+
+    public static void main (String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter your marks : ");
+        int marks =sc.nextInt();
+        if(marks>=90){
+            System.out.println("A grade");
+        }
+        else if(marks>=80){
+            System.out.println("B grade");
+        }
+        else if(marks>=70){
+            System.out.println("C grade");
+        }
+        else if(marks>=60){
+            System.out.println("D grade");
+        }
+        else{
+            System.out.println("Fail");
+        }
+    }
+}
+
+      
+
+
+        
+
+
+

@@ -1,0 +1,356 @@
+1.
+public class num {
+
+    public static void main (String[] args){
+        int a =56;
+        System.out.println(a);
+    }
+}
+
+2.
+public class Num {
+
+    public static void main (String[] args){
+        float f = -5.67f;
+        System.out.println(f);
+    }
+}
+
+3.
+public class Num {
+
+    public static void main (String[] args){
+        char f = 'y';
+        System.out.println(f);
+    }
+}
+
+4.
+public class Num {
+
+    public static void main (String[] args){
+        int f = 67;
+        System.out.println(f);
+    }
+}
+
+5.
+
+public class Num {
+
+    public static void main (String[] args){
+        float f = -3.56f;
+        System.out.println(f);
+    }
+}
+
+6.
+public class Num {
+
+    public static void main (String[] args){
+        char f = 'y';
+        System.out.println(f);
+    }
+}
+
+7.
+public class Num {
+
+    public static void main (String[] args){
+        int f = -9;
+        System.out.println(f);
+    }
+}
+8.
+
+public class Num {
+
+    public static void main (String[] args){
+        float f =4.2f;
+        System.out.println(f);
+    }
+}
+
+9.
+
+public class Num {
+
+    public static void main (String[] args){
+        char f ='t';
+        System.out.println(f);
+    }
+}
+10.
+
+public class Num {
+
+    public static void main (String[] args){
+        int a = 45;
+        int b=7;
+        int c=a+b;
+        System.out.println(c);
+    }
+}
+
+11.
+
+public class Num {
+
+    public static void main (String[] args){
+        int a =234;
+        int b=55;
+        int c=a-b;
+        System.out.println(c);
+    }
+}
+
+12.
+public class Num {
+
+    public static void main (String[] args){
+        int a=56;
+        int b=4;
+        int c=a*b;
+        System.out.println(c);
+    }
+}
+
+13.
+public class Num {
+
+    public static void main (String[] args){
+        int a=22;
+        int b=2;
+        int c=a/b;
+        System.out.println(c);
+    }
+}
+
+14.
+import java.util.*;
+public class Num {
+
+    public static void main (String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter value of a ");
+        int a=sc.nextInt();
+        System.out.println("enter value of b ");
+        int b=sc.nextInt();
+        int c=a+b;
+        System.out.println(c);
+    }
+}
+15.
+import java.util.*;
+public class Num {
+
+    public static void main (String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter value of a ");
+        int a=sc.nextInt();
+        System.out.println("enter value of b ");
+        int b=sc.nextInt();
+        int c=a-b;
+        System.out.println(c);
+    }
+}
+
+16.
+
+import java.util.*;
+public class Num {
+
+    public static void main (String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter value of a ");
+        int a=sc.nextInt();
+        System.out.println("enter value of b ");
+        int b=sc.nextInt();
+        int c=a*b;
+        System.out.println(c);
+    }
+}
+17.
+import java.util.*;
+public class Num {
+
+    public static void main (String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter value of a ");
+        int a=sc.nextInt();
+        System.out.println("enter value of b ");
+        int b=sc.nextInt();
+        int c=a/b;
+        System.out.println(c);
+    }
+}
+18.
+import java.util.*;
+public class Num {
+
+    public static void main (String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter value of a ");
+        int a=sc.nextInt();
+        System.out.println("enter value of b ");
+        int b=sc.nextInt();
+        System.out.println("enter value of c ");
+        int c=sc.nextInt();
+        System.out.println("enter value of d ");
+        int d=sc.nextInt();
+        System.out.println("enter value of e ");
+        int e=sc.nextInt();
+        int sum=a+b+c+d+e;
+        System.out.println(sum);
+    }
+}
+
+19.
+import java.util.*;
+public class Num {
+
+    public static void main (String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter value of a ");
+        int a=sc.nextInt();
+        System.out.println("enter value of b ");
+        int b=sc.nextInt();
+        System.out.println("enter value of c ");
+        int c=sc.nextInt();
+        System.out.println("enter value of d ");
+        int d=sc.nextInt();
+        System.out.println("enter value of e ");
+        int e=sc.nextInt();
+        int sum=a*b+c/d-e;
+        System.out.println(sum);
+    }
+}
+20.import java.util.Scanner;
+
+public class Basic {
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter first number");
+        float a =sc.nextFloat();
+        System.out.println("enter second number");
+        float b =sc.nextFloat();
+        System.out.println("enter third number");
+        float c =sc.nextFloat();
+        System.out.println("enter fourth number");
+        int d =sc.nextInt();
+        float sum=a*b-c/d;
+        System.out.println(sum);
+        
+}
+}
+21.import java.util.Scanner;
+
+public class Basic {
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter first number");
+        float a =sc.nextFloat();
+        System.out.println("enter second number");
+        int b =sc.nextInt();
+        System.out.println("enter third number");
+        int c =sc.nextInt();
+        System.out.println("enter fourth number");
+        int d =sc.nextInt();
+        System.out.println("enter fifth number");
+        float e =sc.nextFloat();
+        System.out.println("enter sixth number");
+        float f =sc.nextFloat();
+        float sum=a*(b-c)/d+e-f;
+        System.out.println(sum);
+        
+}
+}
+
+22.import java.util.Scanner;
+
+public class Basic {
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter first number");
+        float a =sc.nextFloat();
+        System.out.println("enter second number");
+        float b =sc.nextFloat();
+        System.out.println("enter third number");
+        int c =sc.nextInt();
+        System.out.println("enter fourth number");
+        int d =sc.nextInt();
+        System.out.println("enter fifth number");
+        float e =sc.nextFloat();
+        System.out.println("enter sixth number");
+        float f =sc.nextFloat();
+        float sum=a*b-(c/d)-e+f;
+        System.out.println(sum);
+        
+}
+
+23.
+
+24.
+import java.util.Scanner;
+
+public class Basic {
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter first number");
+        float a =sc.nextFloat();
+        System.out.println("enter second number");
+        float b =sc.nextFloat();
+        System.out.println("enter third number");
+        float c =sc.nextFloat();
+        System.out.println("enter fourth number");
+        float d =sc.nextFloat();
+        System.out.println("enter fifth number");
+        int e =sc.nextInt();
+        System.out.println("enter sixth number");
+        float f =sc.nextFloat();
+        float sum=a-b*(c-d)/e+f;
+        System.out.println(sum);
+        
+}
+}
+
+25.import java.util.*;
+public class Basic {
+    public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("enter value of a  : ");
+    float a=sc.next().charAt(0);
+    System.out.println("enter value of b  : ");
+    float b=sc.next().charAt(0);
+    System.out.println("enter value of c  : ");
+    float c=sc.next().charAt(0);
+    System.out.println("enter value of d  : ");
+    float d=sc.next().charAt(0);
+    System.out.println("enter value of e  : ");
+    float e=sc.next().charAt(0);
+    System.out.println("enter value of f  : ");
+    int f=sc.nextInt();
+    System.out.println("enter value of g  : ");
+    int g=sc.nextInt();
+    float sum=a*b-(c-d)+e-f+g;
+    System.out.println(sum);
+          
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,762 @@
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=5;i++){
+        for(int j=1;j<=5;j++){
+            if(i==1 || i==5 || j==1 || j==5){
+            printf("*");
+            }
+            else{
+                printf(" ");
+            }
+        }
+         printf("\n");
+    }
+   
+    return 0;
+}
+
+--------------------------------------------------------------------------------------------
+
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=6;i++){
+        for(int j=1;j<=8;j++){
+            if(i==1 || i==4 || j==1 || j==8){
+            printf("*");
+            }
+            else{
+                printf(" ");
+            }
+        }
+         printf("\n");
+    }
+   
+    return 0;
+}
+
+------------------------------------------------------------------------------------------------
+
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=7;i++){
+        for(int j=1;j<=8;j++){
+            if(i==1 || i==4 ||i==7 || j==1 || j==8){
+            printf("*");
+            }
+            else{
+                printf(" ");
+            }
+        }
+         printf("\n");
+    }
+   
+    return 0;
+}
+
+------------------------------------------------------------------------------------------
+
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=7;i++){
+        for(int j=1;j<=7;j++){
+            if(i==1 || i==7|| j==1 ){
+            printf("*");
+            }
+            else{
+                printf(" ");
+            }
+        }
+         printf("\n");
+    }
+   
+    return 0;
+}
+
+--------------------------------------------------------------------------------------
+
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=7;i++){
+        for(int j=1;j<=7;j++){
+            if(i==1 || i==7|| j==7){
+            printf("*");
+            }
+            else{
+                printf(" ");
+            }
+        }
+         printf("\n");
+    }
+   
+    return 0;
+}
+
+----------------------------------------------------------------------------------------
+
+
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=7;i++){
+        for(int j=1;j<=7;j++){
+            if( i==7||j==1|| j==7){
+            printf("*");
+            }
+            else{
+                printf(" ");
+            }
+        }
+         printf("\n");
+    }
+   
+    return 0;
+}
+
+-------------------------------------------------------------------------------------------
+
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=7;i++){
+        for(int j=1;j<=7;j++){
+            if( i==1||j==1|| j==7){
+            printf("*");
+            }
+            else{
+                printf(" ");
+            }
+        }
+         printf("\n");
+    }
+   
+    return 0;
+}
+
+------------------------------------------------------------------------------
+
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=7;i++){
+        for(int j=1;j<=7;j++){
+            if( i==1||i==7||i==4|| j==7){
+            printf("*");
+            }
+            else{
+                printf(" ");
+            }
+        }
+         printf("\n");
+    }
+   
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=7;i++){
+        for(int j=1;j<=7;j++){
+            if( i==1||i==7||i==4|| j==1){
+            printf("*");
+            }
+            else{
+                printf(" ");
+            }
+        }
+         printf("\n");
+    }
+   
+    return 0;
+}
+
+-------------------------------------------------------------------------------------
+
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=7;i++){
+        for(int j=1;j<=7;j++){
+            if( i==1||i==4|| j==1){
+            printf("*");
+            }
+            else{
+                printf(" ");
+            }
+        }
+         printf("\n");
+    }
+   
+    return 0;
+}
+
+--------------------------------------------------------------------------------------------
+
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=7;i++){
+        for(int j=1;j<=7;j++){
+            if( i==4|| j==1||j==7){
+            printf("*");
+            }
+            else{
+                printf(" ");
+            }
+        }
+         printf("\n");
+    }
+   
+    return 0;
+}
+
+-----------------------------------------------------------------------------------------
+
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=7;i++){
+        for(int j=1;j<=7;j++){
+            if( i==1||i==7|| j==4){
+            printf("*");
+            }
+            else{
+                printf(" ");
+            }
+        }
+         printf("\n");
+    }
+   
+    return 0;
+}
+
+---------------------------------------------------------------------------------------------
+
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=7;i++){
+        for(int j=1;j<=7;j++){
+            if( i==7|| j==1){
+            printf("*");
+            }
+            else{
+                printf(" ");
+            }
+        }
+         printf("\n");
+    }
+   
+    return 0;
+}
+
+------------------------------------------------------------------------------------
+
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=7;i++){
+        for(int j=1;j<=7;j++){
+            if(i==1|| j==7){
+            printf("*");
+            }
+            else{
+                printf(" ");
+            }
+        }
+         printf("\n");
+    }
+   
+    return 0;
+}
+
+-----------------------------------------------------------------------------------------------
+
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=7;i++){
+        for(int j=1;j<=7;j++){
+            if(i==1|| j==1){
+            printf("*");
+            }
+            else{
+                printf(" ");
+            }
+        }
+         printf("\n");
+    }
+   
+    return 0;
+}
+
+---------------------------------------------------------------------------
+
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=7;i++){
+        for(int j=1;j<=7;j++){
+            if(i==7|| j==7){
+            printf("*");
+            }
+            else{
+                printf(" ");
+            }
+        }
+         printf("\n");
+    }
+   
+    return 0;
+}
+
+----------------------------------------------------------------------------------
+
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=7;i++){
+        for(int j=1;j<=7;j++){
+            if(i+j==1+7){
+            printf("*");
+            }
+            else{
+                printf(" ");
+            }
+        }
+         printf("\n");
+    }
+   
+    return 0;
+}
+
+---------------------------------------------------------
+
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=7;i++){
+        for(int j=1;j<=7;j++){
+            if(i==j){
+            printf("*");
+            }
+            else{
+                printf(" ");
+            }
+        }
+         printf("\n");
+    }
+   
+    return 0;
+}
+
+----------------------------------------------------------------------------
+
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=7;i++){
+        for(int j=1;j<=7;j++){
+            if(i==j||i+j==1+7){
+            printf("*");
+            }
+            else{
+                printf(" ");
+            }
+        }
+         printf("\n");
+    }
+   
+    return 0;
+}
+
+-------------------------------------------------------------------------------------
+
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=7;i++){
+        for(int j=1;j<=7;j++){
+            if(i==j||i==1||i==7){
+            printf("*");
+            }
+            else{
+                printf(" ");
+            }
+        }
+         printf("\n");
+    }
+   
+    return 0;
+}
+
+---------------------------------------------------------------------------------------
+
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=7;i++){
+        for(int j=1;j<=7;j++){
+            if(i+j==1+7||i==1||i==7){
+            printf("*");
+            }
+            else{
+                printf(" ");
+            }
+        }
+         printf("\n");
+    }
+   
+    return 0;
+}
+
+-------------------------------------------------------------------------------------
+
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=7;i++){
+        for(int j=1;j<=7;j++){
+            if(i==j||i==1||i==7||j==1||j==7){
+            printf("*");
+            }
+            else{
+                printf(" ");
+            }
+        }
+         printf("\n");
+    }
+   
+    return 0;
+}
+
+------------------------------------------------------------------------------
+
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=7;i++){
+        for(int j=1;j<=7;j++){
+            if(i+j==1+7||i==1||i==7||j==1||j==7){
+            printf("*");
+            }
+            else{
+                printf(" ");
+            }
+        }
+         printf("\n");
+    }
+   
+    return 0;
+}
+
+------------------------------------------------------------------------------------
+
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=7;i++){
+        for(int j=1;j<=7;j++){
+            if(i+j==1+7||i==j||i==1||i==7||j==1||j==7){
+            printf("*");
+            }
+            else{
+                printf(" ");
+            }
+        }
+         printf("\n");
+    }
+   
+    return 0;
+}
+
+-------------------------------------------------------------------------
+
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=7;i++){
+        for(int j=1;j<=7;j++){
+            if(i==j||i==1||j==1){
+            printf("*");
+            }
+            else{
+                printf(" ");
+            }
+        }
+         printf("\n");
+    }
+   
+    return 0;
+}
+
+--------------------------------------------------------------------------
+
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=7;i++){
+        for(int j=1;j<=7;j++){
+            if(i+j==1+7||i==1||j==7){
+            printf("*");
+            }
+            else{
+                printf(" ");
+            }
+        }
+         printf("\n");
+    }
+   
+    return 0;
+}
+
+---------------------------------------------------------------------------
+
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=7;i++){
+        for(int j=1;j<=7;j++){
+            if(i+j==1+7||i==7||j==1){
+            printf("*");
+            }
+            else{
+                printf(" ");
+            }
+        }
+         printf("\n");
+    }
+   
+    return 0;
+}
+
+-------------------------------------------------------------------------------
+
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=7;i++){
+        for(int j=1;j<=7;j++){
+            if(i==j||i==7||j==7){
+            printf("*");
+            }
+            else{
+                printf(" ");
+            }
+        }
+         printf("\n");
+    }
+   
+    return 0;
+}
+
+------------------------------------------------------------------------------------
+
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=4;i++){
+        for(int j=1;j<=4;j++){
+            if(i==1||i==4||j==4||j==1){
+            printf("*");
+           }
+            else{
+                printf("%d",i);
+            }
+        }
+         printf("\n");
+    }
+   
+    return 0;
+}
+
+-------------------------------------------------------------------------------
+
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=4;i++){
+        for(int j=1;j<=4;j++){
+            if(i==1||i==4||j==4||j==1){
+            printf("*");
+           }
+            else{
+                printf("%d",i-2);
+            }
+        }
+         printf("\n");
+    }
+   
+    return 0;
+}
+
+-------------------------------------------------------------------------------
+
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=5;i++){
+        for(int j=1;j<=5;j++){
+            if(i==1||i==5||j==5||j==1){
+            printf("*");
+           }
+            else{
+                printf("#");
+            }
+        }
+         printf("\n");
+    }
+   
+    return 0;
+}
+
+-----------------------------------------------------------------------------------
+
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=4;i++){
+        for(int j=1;j<=4;j++){
+            if(i==1||i==4||j==4||j==1){
+            printf("*");
+           }
+            else{
+                printf("%d",j);
+            }
+        }
+         printf("\n");
+    }
+   
+    return 0;
+}
+
+------------------------------------------------------------------------------------------------
+
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=5;i++){
+        for(int j=1;j<=5;j++){
+            if(i==j){
+            printf("*");
+           }
+            else{
+                printf("%d",j);
+            }
+        }
+         printf("\n");
+    }
+   
+    return 0;
+}
+
+-------------------------------------------------------------------------------
+
+#include<stdio.h>
+int main(){
+   int sum=1;
+    for(int i=1;i<=5;i++){
+        for(int j=1;j<=5;j++){
+            if(i==j){
+            printf(" *");
+            sum=sum+1;
+           }
+            else{
+                printf(" %d",sum);
+                sum=sum+1;
+            }
+        }
+         printf("\n");
+    }
+   
+    return 0;
+}
+
+------------------------------------------------------------------------------------
+
+#include<stdio.h>
+int main(){
+   int sum=1;
+    for(int i=1;i<=5;i++){
+        for(int j=5;j>=1;j--){
+          printf("%d",j);
+        }
+         printf("\n");
+    }
+   
+    return 0;
+}
+
+---------------------------------------------------------------------------
+
+#include<stdio.h>
+int main(){
+   int sum=1;
+    for(int i=1;i<=5;i++){
+         for(int s=1;s<i;s++){
+            printf(" ");
+         }
+        for(int j=5;j>=1;j--){
+          printf("*");
+        
+          }
+         printf("\n");
+         
+    }
+   
+    return 0;
+}
+
+-------------------------------------------------------------------------------
+
+#include<stdio.h>
+int main(){
+   int sum=1;
+    for(int i=1;i<=4;i++){
+         for(int s=1;s<i;s++){
+            printf(" ");
+         }
+        for(int j=1;j<=5-i;j++){
+          printf("%d",j);
+        
+          }
+         printf("\n");
+         
+    }
+   
+    return 0;
+}
+
+--------------------------------------------------------------------------------------
+
+#include<stdio.h>
+int main(){
+   int sum=1;
+    for(int i=1;i<=5;i++){
+         for(int s=1;s<i;s++){
+            printf(" ");
+         }
+        for(int j=5;j>=i;j--){
+          printf("%d",j);
+        
+          }
+         printf("\n");
+         
+    }
+   
+    return 0;
+}
+
+----------------------------------------------------------------------------------
+
+#include<stdio.h>
+int main(){
+   int sum=1;
+    for(int i=1;i<=5;i++){
+        for(int j=1;j<=5;j++){
+          printf(" %d",sum);
+          sum = sum+1;
+        
+          }
+          sum=sum-4;
+         printf("\n");
+         
+    }
+   
+    return 0;
+}
+
+
+-----------------------------------------------------------------------------
+
+#include<stdio.h>
+int main(){
+ 
+    for(int i=1;i<=4;i++){
+         int sum=1;
+        for(int j=i;j>=1;j--){
+          printf(" %d",j);
+         
+       
+          }
+          
+         printf("\n");
+    }
+   
+    return 0;
+}
+

@@ -1,0 +1,150 @@
+1.super uses------------------------->
+first use(parameterised constructor)----->
+class A{
+    A(int a){
+        System.out.println("A class "+a);
+    }
+}
+class B extends A{
+    B(){
+        super(56);
+        System.out.println("B class");
+    }
+}
+
+public class polymorphism {
+    public static void main(String[] args) {
+        new B();
+    }
+}
+
+second use(method overriding)---------------------->
+class A{
+    void show(){
+        System.out.println("A class");
+    }
+}
+class B extends A{
+    void show(){
+        super.show();
+        System.out.println("B class");
+    }
+}
+
+public class polymorphism {
+    public static void main(String[] args) {
+        B p=new B();
+        p.show();
+    }
+}
+
+Third use(Instance variable call)------------->
+
+class A{
+    String name="simran";
+}
+class B extends A{
+    String name="Shubham";
+    void show(){
+        System.out.println(super.name);
+        System.out.println(name);
+    }
+}
+
+public class polymorphism {
+    public static void main(String[] args) {
+        B p=new B();
+        p.show();
+    }
+}
+
+2.abstract class A{
+    abstract void method1();
+    abstract void method2(int a);
+    abstract int method3();
+    abstract int method4(int b);
+    A show(){
+        System.out.println("A class covariant");
+        return this;
+    }
+
+}
+class B extends A{
+    void method1(){
+        System.out.println("method 1");
+    }
+    void method2(int a){
+        System.out.println("method 2 "+a);
+    }
+    int method3(){
+        int a=10;
+        System.out.println(a);
+        return a;
+    }
+    int method4(int b){
+        System.out.println(b);
+        return b;
+    }
+}
+
+public class polymorphism {
+    public static void main(String[] args) {
+        B p=new B();
+        p.method1();
+        p.method2(20);
+        p.method3();
+        p.method4(40);
+        p.show();
+    }
+}
+
+3.abstract class A{
+    abstract void method1();
+}
+class B extends A{
+    void method1(){
+        System.out.println("method 1");
+    }
+}
+class C extends A{
+    void method1(){
+        System.out.println("method 2");
+    }
+}
+
+public class polymorphism {
+    public static void main(String[] args) {
+        B p=new B();
+        p.method1();
+        C s=new C();
+        s.method1();
+    }
+}
+
+4.abstract class A{
+    abstract void method1();
+}
+class B extends A{
+    void method1(){
+        System.out.println("method 1");
+    }
+}
+class C extends B{
+    
+}
+
+public class polymorphism {
+    public static void main(String[] args) {
+        B p=new B();
+        p.method1();
+    }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,436 @@
+1.class :
+	class :
+		method :static 
+
+access --------------------------------------------->
+
+class A{
+    class B{
+        static void show(){
+            System.out.println("static method");
+        }
+    }
+}
+public class anonymousclass {
+    public static void main(String[] args) {
+        A.B.show();
+    }
+}
+
+2.class :
+	class :
+		instance variable :static 
+		method static 
+
+access------------------------------------------------>
+
+class A{
+    class B{
+        static int a=23;
+        static void show(){
+            System.out.println("static method "+a);
+        }
+    }
+}
+public class anonymousclass {
+    public static void main(String[] args) {
+        A.B.show();
+    }
+}
+
+
+3.class :
+	static class :
+		static method ---------------------------->
+
+class A{
+   static class B{
+        static void show(){
+            System.out.println("static method ");
+        }
+    }
+}
+public class anonymousclass {
+    public static void main(String[] args) {
+        A.B.show();
+    }
+}
+
+4.class :
+	static class :
+		non-static method (not accessible)------------------------->
+class A{
+   static class B{
+         void show(){
+            System.out.println("static method ");
+        }
+    }
+}
+public class anonymousclass {
+    public static void main(String[] args) {
+        A p=new A();
+        A.B k= p.new B()
+        k.show();
+    }
+}
+
+5.class :
+	static class :
+		instance variable :non 
+		method :static() [not possible]----------------------------->
+class A{
+   static class B{
+    int a=89;
+        static void show(){
+            System.out.println("static method "+a);
+        }
+    }
+}
+public class anonymousclass {
+    public static void main(String[] args) {
+        A.B.show();
+    }
+}
+
+6.class :
+	static class :
+		instance variable :static 
+		method :static
+
+access [accessible]------------------------------------------------------>
+
+class A{
+   static class B{
+    static int a=89;
+        static void show(){
+            System.out.println("static method "+a);
+        }
+    }
+}
+public class anonymousclass {
+    public static void main(String[] args) {
+        A.B.show();
+    }
+}
+
+7.class :
+	class : 
+		no return and no argument 
+		 return and no argument 
+
+	class :
+		no return and  argument 
+		 return and  argument 
+
+access ------------------------------------------------------------->
+
+class A{
+   class B{
+      void show1(){
+        System.out.println("show-1");
+      }
+      int show2(){
+        int a=67;
+        System.out.println("show-2 "+a);
+        return a;
+      }
+   }
+   class C{
+       void show3(int a){
+        System.out.println("show-3 "+a);
+       }
+       int show4(int a){
+        System.out.println("show-4 "+a);
+        return a;
+       }
+   }
+}
+public class anonymousclass {
+    public static void main(String[] args) {
+        A.B p=new A().new B();
+        p.show1();
+        p.show2();
+        A.C k=new A().new C();
+        k.show3(78);
+        k.show4(556);
+    }
+}
+
+8.class :
+	static class : 
+		static no return and no argument 
+		static return and no argument 
+
+	class :
+		no return and  argument 
+		 return and  argument 
+
+access --------------------------------------------------------------->
+
+class A{
+    static class B{
+      static void show1(){
+        System.out.println("show-1");
+      }
+      static int show2(){
+        int a=67;
+        System.out.println("show-2 "+a);
+        return a;
+      }
+   }
+   class C{
+       void show3(int a){
+        System.out.println("show-3 "+a);
+       }
+       int show4(int a){
+        System.out.println("show-4 "+a);
+        return a;
+       }
+   }
+}
+public class anonymousclass {
+    public static void main(String[] args) {
+        A.B.show1();
+        A.B.show2();
+        A.C k=new A().new C();
+        k.show3(78);
+        k.show4(556);
+    }
+}
+
+9.class :
+	static class : 
+		static no return and no argument 
+		static return and no argument 
+
+	class :
+		static no return and  argument 
+		 return and  argument 
+
+access --------------------------------------------------------------->
+
+class A{
+    static class B{
+      static void show1(){
+        System.out.println("show-1");
+      }
+      static int show2(){
+        int a=67;
+        System.out.println("show-2 "+a);
+        return a;
+      }
+   }
+   class C{
+       static void show3(int a){
+        System.out.println("show-3 "+a);
+       }
+       int show4(int a){
+        System.out.println("show-4 "+a);
+        return a;
+       }
+   }
+}
+public class anonymousclass {
+    public static void main(String[] args) {
+        A.B.show1();
+        A.B.show2();
+        A.C k=new A().new C();
+        A.C.show3(67);
+        k.show4(556);
+    }
+}
+
+
+10.class :
+	static class : 
+			instance variable :static 
+		static no return and no argument 
+		static return and no argument 
+
+	class :
+			instance variable :static 
+		static no return and  argument 
+		 return and  argument 
+
+access ---------------------------------------------------------------->
+
+class A{
+    static class B{
+        static int a=56;
+      static void show1(){
+        System.out.println("show-1 "+a);
+      }
+      static int show2(){
+        System.out.println("show-2 "+a);
+        return a;
+      }
+   }
+   class C{
+       static int a=89;
+       static void show3(int a){
+        System.out.println("show-3 "+a);
+       }
+       int show4(int a){
+        System.out.println("show-4 "+a);
+        return a;
+       }
+   }
+}
+public class anonymousclass {
+    public static void main(String[] args) {
+        A.B.show1();
+        A.B.show2();
+        A.C k=new A().new C();
+        A.C.show3(78);
+        k.show4(556);
+    }
+}
+
+11.class 
+	interface 
+		method 
+
+	class
+		method 
+
+access ------------------------------------------------------------------>
+
+class A{
+    interface  B{
+       void show1();
+   }
+   class C{
+    void show2(){
+        System.out.println("static method");
+    }
+   }
+}
+public class anonymousclass {
+    public static void main(String[] args) {
+        A.B p=new A.B() {
+         public void show1(){
+           System.out.println("interface method ");
+        }
+    };
+    p.show1();
+    A.C k=new A().new C();
+    k.show2();
+}
+}
+
+12.class 
+	interface 
+		method 
+
+	static class
+		static method 
+
+access ------------------------------------------------------------------->
+
+class A{
+    interface  B{
+       void show1();
+   }
+   static class C{
+    static void show2(){
+        System.out.println("static method");
+    }
+   }
+}
+public class anonymousclass {
+    public static void main(String[] args) {
+        A.B p=new A.B() {
+         public void show1(){
+           System.out.println("interface method ");
+        }
+    };
+    p.show1();
+    A.C.show2();
+}
+}
+
+13.class
+	class
+		class
+			method :access
+
+access ------------------------------------------------------------------->
+
+class A{
+    class B{
+        class C{
+            void show1(){
+                System.out.println("nested class method");
+            }
+   }
+}
+}
+public class anonymousclass {
+    public static void main(String[] args) {
+        A.B.C p=new A().new B().new C();
+        p.show1();
+}
+}
+
+14.class
+	static class
+		static class
+			static method :access
+
+access ------------------------------------------------------------------->
+
+class A{
+    static class B{
+       static  class C{
+           static void show1(){
+                System.out.println("nested class method");
+            }
+   }
+}
+}
+public class anonymousclass {
+    public static void main(String[] args) {
+        A.B.C.show1();
+}
+}
+
+15.interface 
+	class
+		method 
+
+	interface 
+		method 
+
+access -------------------------------------------------------------------->
+
+interface A{
+    class B{
+        void show1(){
+            System.out.println("class B method");
+        }
+    }
+    interface C{
+        void show2();
+    }
+}
+public class anonymousclass {
+    public static void main(String[] args) {
+        A.B p=new A.B();
+        p.show1();
+        A.C k=new A.C() {
+            public void show2(){
+                System.out.println("interface method show-2");
+            }
+        };
+        k.show2();
+}
+}
+
+
+
+
+
+
+
+
+

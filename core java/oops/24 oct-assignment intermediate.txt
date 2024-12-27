@@ -1,0 +1,188 @@
+1.reverse number----------------------------->
+
+import java.util.*;
+public class Basic {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("enter a number ");
+    int a =sc.nextInt();
+    int remainder;
+    int reversed_num=0;
+    while(a!=0){
+      remainder=a%10;
+      reversed_num=reversed_num*10+remainder;
+      a=a/10;
+    }
+    System.out.println("reversed number of "+a+" is : "+reversed_num);
+  }
+}
+
+2.Armstrong number---------------------->
+import java.util.Scanner;
+
+public class ArmstrongCheck {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter a number to check if it's an Armstrong number: ");
+        int num = scanner.nextInt();
+        int temp = num;
+        int rem = 0;
+
+        while (num != 0) {
+            int n = num % 10;        
+            rem = rem + (n * n * n);
+            num = num / 10;         
+        }
+        
+        if (temp == rem) {
+            System.out.println(temp + " is an Armstrong number.");
+        } else {
+            System.out.println(temp + " is not an Armstrong number.");
+        }
+        
+    
+    }
+}
+
+3.palindrome number-------------------------->
+
+import java.util.*;
+public class Basic {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("enter a number ");
+    int num =sc.nextInt();
+    int remainder;
+    int reversed_num=0;
+    int original_num=num;
+    while(num!=0){
+      remainder=num%10;
+      reversed_num=reversed_num*10+remainder;
+      num=num/10;
+    }
+    if(original_num==reversed_num){
+      System.out.println(" It is a palindrome number ");
+    }
+    else {
+      System.out.println("not a palindrome");
+    }
+  }
+}
+4. neon number----------------------------------->
+
+import java.util.*;
+public class Basic {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("enter a number ");
+    int num =sc.nextInt();
+    int sum=0;
+    int reminder;
+    int square=num*num;
+    while(square>0){
+      reminder=num%10;
+      sum=sum+reminder;
+      square=square/10;
+    }
+    if(num==sum){
+      System.out.println("neon number");
+    }
+    else{
+      System.out.println("not a neon");
+    }
+    
+  }
+}
+
+
+7.fibonacii series------------------------------------->
+
+  import java.util.*;
+  public class Basic {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("enter a term ");
+    int num =sc.nextInt();
+    int a=0;
+    int b=1;
+    int i=1;
+    System.out.println(a);
+    System.out.println(b);
+    while(i<=num){
+      int c=a+b;
+      System.out.println(c);
+      i++;
+      a=b;
+      b=c;
+    }
+    
+  }
+}
+
+11. even number from 1 to 100--------------->
+
+public class Basic {
+  public static void main(String[] args) {
+    for(int i=1;i<=100;i++){
+      if(i%2==0){
+        System.out.print(i+" ");
+      }
+    }
+  }
+}
+
+sum of even numbers from 1 to 100-------------------------->
+
+public class Basic {
+  public static void main(String[] args) {
+    int sum=0;
+    for(int i=1;i<=100;i++){
+      if(i%2==0){
+        sum=sum+i;
+      }
+      }
+      System.out.println("sum of even numbers from 1 to 100 : "+sum);
+    }
+  }
+
+random value from user---------------------------->
+import java.util.*;
+public class Basic {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("enter a number ");
+    int num1 =sc.nextInt();
+    System.out.println("enter a number ");
+    int num2 =sc.nextInt();
+    for(int i=num1;i<=num2;i++){
+      if(i%2==0){
+        System.out.print(i+" ");
+      }
+      }
+    }
+  }
+sum all even numbers from user input--------------------------->
+
+import java.util.*;
+public class Basic {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("enter a number ");
+    int num1 =sc.nextInt();
+    System.out.println("enter a number ");
+    int num2 =sc.nextInt();
+    int sum=0;
+    for(int i=num1;i<=num2;i++){
+      if(i%2==0){
+        sum=sum+i;
+      }
+      }
+      System.out.println("sum of all numbers is : "+sum);
+    }
+  }
+
+12.
+
+
+ 

@@ -1,0 +1,611 @@
+1.interface A{
+    class B{
+        int show1(int a){
+            System.out.println("show-1 "+a);
+            return a;
+        }
+        int show2(int a){
+            System.out.println("show-2 "+a);
+            return a;
+        }
+    }
+}
+class C extends A.B{
+    void show(){
+        System.out.println("C class method");
+    }
+}
+
+public class interface3 {
+    public static void main(String[] args) {
+        C p=new C();
+        p.show1(89);
+        p.show2(78);
+        p.show();
+        
+    }
+}
+
+2.interface A{
+    void show3();
+    void show4();
+    class B{
+        int show1(int a){
+            System.out.println("show-1 "+a);
+            return a;
+        }
+        int show2(int a){
+            System.out.println("show-2 "+a);
+            return a;
+        }
+    }
+}
+class C extends A.B implements A{
+    public void show3(){
+        System.out.println("show-3");
+    }
+    public void show4(){
+      System.out.println("show-4");
+    }
+    void show(){
+        System.out.println("C class method");
+    }
+}
+
+public class interface3 {
+    public static void main(String[] args) {
+        C p=new C();
+        p.show1(89);
+        p.show2(78);
+        p.show3();
+        p.show4();
+        p.show();
+        
+    }
+}
+
+3.interface A{
+    class B{
+      B(){
+     System.out.println("B class constructor");
+      }
+    }
+}
+
+class C extends A.B{
+    
+}
+
+public class interface3 {
+    public static void main(String[] args) {
+        new C();
+    }
+}
+
+4.interface A{
+    class B{
+      B(int a){
+     System.out.println("B class constructor "+a);
+      }
+    }
+}
+
+class C extends A.B{
+   C(){
+    super(67);
+   }
+}
+
+public class interface3 {
+    public static void main(String[] args) {
+        new C();
+    }
+}
+
+5.class A{
+    void show1(){
+        System.out.println("show-1");
+    }
+    interface B{
+      
+    }
+}
+
+class C extends A implements A.B{
+   
+}
+
+public class interface3 {
+    public static void main(String[] args) {
+        C p=new C();
+        p.show1();
+    }
+}
+
+
+6.class :method1 
+	interface :method2 
+
+another class :access---------------------->
+
+class A{
+    void show1(){
+        System.out.println("show-1");
+    }
+    interface B{
+      void show2();
+    }
+}
+
+class C extends A implements A.B{
+   public void show2(){
+    System.out.println("show-2");
+   }
+}
+
+public class interface3 {
+    public static void main(String[] args) {
+        C p=new C();
+        p.show1();
+        p.show2();
+    }
+}
+
+7.class : 
+	interface method1
+
+another class :access --------------------------------->
+
+class A{
+    
+    interface B{
+      void show1();
+    }
+}
+
+class C implements A.B{
+   public void show1(){
+    System.out.println("show-1");
+   }
+}
+
+public class interface3 {
+    public static void main(String[] args) {
+        C p=new C();
+        p.show1();
+    }
+}
+
+8.interface 
+	interface :method1 
+
+
+another class :access 
+refrence variable ----------------------------->
+
+interface A{
+
+    interface B{
+      void show1();
+    }
+}
+
+class C implements A.B{
+   public void show1(){
+    System.out.println("show-1");
+   }
+}
+
+public class interface3 {
+    public static void main(String[] args) {
+        A.B p=new C();
+        p.show1();
+    }
+}
+
+9.interface :method2
+	interface :method1 
+
+another class :access ------------------------------>
+
+interface A{
+    void show1();
+
+    interface B{
+      void show2();
+    }
+}
+
+class C implements A.B,A{
+   public void show1(){
+    System.out.println("show-1");
+   }
+   public void show2(){
+    System.out.println("show-2");
+   }
+}
+
+public class interface3 {
+    public static void main(String[] args) {
+        C p=new C();
+        p.show1();
+        p.show2();
+    }
+}
+
+10.interface :method3
+	interface : 
+
+another class :access ---------------------------------->
+
+interface A{
+    void show1();
+
+    interface B{
+      
+    }
+}
+
+class C implements A.B{
+   public void show1(){
+    System.out.println("show-1");
+   }
+   
+}
+
+public class interface3 {
+    public static void main(String[] args) {
+        C p=new C();
+        p.show1();
+    }
+}
+
+11.interface :method3 :private 
+	interface : method1 protected
+
+another class :access 
+refrence variable ----------------------------------->
+
+interface A{
+   private void show(){
+    System.out.println("private method show-1");
+   }
+   default void show1(){
+      show();
+   }
+
+    interface B{
+      protected void show2(){
+        System.out.println("protected method show-2");
+      }
+    }
+}
+
+class C implements A.B,A{
+   
+   
+}
+
+public class interface3 {
+    public static void main(String[] args) {
+        A p=new C();
+        p.show1();
+        A.B s=new C();
+        s.show2();
+    }
+}
+
+12.interface :method3 :default 
+	interface : method1 protected
+
+another class :access -------------------------------------->
+
+interface A{
+   default void show1(){
+      System.out.println("default method show-1");
+   }
+
+    interface B{
+      protected void show2(){
+        System.out.println("protected method show-2");
+      }
+    }
+}
+
+class C implements A,A.B{
+   
+   
+}
+
+public class interface3 {
+    public static void main(String[] args) {
+        C p=new C();
+        p.show1();
+        p.show2();
+    }
+}
+
+13.interface :method3 :private 
+	interface : method1 default
+
+another class :access ----------------------------------------------->
+
+interface A{
+   private void show1(){
+      System.out.println("private method show-1");
+   }
+   default void show2(){
+      show1();
+   }
+
+    interface B{
+      default void show3(){
+        System.out.println("default method show-2");
+      }
+    }
+}
+
+class C implements A,A.B{
+   
+   
+}
+
+public class interface3 {
+    public static void main(String[] args) {
+        C p=new C();
+        p.show2();
+        p.show3();
+    }
+}
+
+14.interface :method3 :default 
+	interface : method1 private
+
+another class :access ------------------------------------------->
+
+interface A{
+   
+   default void show1(){
+      System.out.println("default method show-1");
+   }
+
+    interface B{
+      private void show2(){
+        System.out.println("private method show-2");
+      }
+      default void show3(){
+        show2();
+      }
+    }
+}
+
+class C implements A,A.B{
+   
+   
+}
+
+public class interface3 {
+    public static void main(String[] args) {
+        C p=new C();
+        p.show1();
+        p.show3();
+    }
+}
+
+15.class  :default constructor 
+	  interface : method1
+		
+another class :access 
+refrence variable---------------------------------------->
+
+class A{
+   
+   A(){
+    System.out.println("A class constructor");
+   }
+
+    interface B{
+      void show1();
+    }
+}
+
+class C extends A implements A.B{
+   public void show1(){
+    System.out.println("show-1");
+   }
+}
+
+public class interface3 {
+    public static void main(String[] args) {
+        A.B p=new C();
+        p.show1();
+    }
+}
+
+16.class :parameterised constructor 
+	 interface : method1
+		
+another class :access ----------------------------->
+
+class A{
+   
+   A(int a){
+    System.out.println("A class constructor "+a);
+   }
+
+    interface B{
+      void show1();
+    }
+}
+
+class C extends A implements A.B{
+    C(){
+        super(78);
+    }
+   public void show1(){
+    System.out.println("show-1");
+   }
+}
+
+public class interface3 {
+    public static void main(String[] args) {
+        C p=new C();
+        p.show1();
+    }
+}
+
+17.interface 
+	interface 
+		interface 
+			interface 
+				method 
+
+another class access method ---------------------------------------->
+
+interface A{
+
+    interface B{
+
+      interface C{
+
+        interface D{
+            void show1();
+        }
+      }
+    }
+}
+
+class E  implements A.B.C.D{
+   public void show1(){
+    System.out.println("show-1");
+   }
+}
+
+public class interface3 {
+    public static void main(String[] args) {
+        E p=new E();
+        p.show1();
+    }
+}
+
+18.interface :method1
+	interface :method2
+
+		interface :method3
+
+			interface :method4
+				method 
+
+another class access method ------------------------------------>
+
+interface A{
+  void show1();
+    interface B{
+     void show2();
+      interface C{
+     void show3();
+        interface D{
+            void show4();
+            default void show5(){
+                System.out.println("show-5");
+            }
+        }
+      }
+    }
+}
+
+class E  implements A.B.C.D{
+   public void show1(){
+    System.out.println("show-1");
+   }
+   public void show2(){
+    System.out.println("show-2");
+   }
+   public void show3(){
+    System.out.println("show-3");
+   }
+   public void show4(){
+    System.out.println("show-4");
+   }
+}
+
+public class interface3 {
+    public static void main(String[] args) {
+        E p=new E();
+        p.show1();
+        p.show2();
+        p.show3();
+        p.show4();
+        p.show5();
+    }
+}
+
+19.interface :method1 :private 
+	interface :method2 :default 
+
+		interface :method3 :public 
+
+			interface :method4 :private 
+				method 
+
+another class access method ------------------------------------------->
+
+interface A{
+  private void show(){
+    System.out.println("private method show-1");
+  }
+  default void show1(){
+    show();
+  }
+
+interface B{
+      default void show2(){
+        System.out.println("default method show-2");
+      }
+interface C{
+      void show3();
+        interface D{
+            private void show4(){
+                System.out.println("private method show-4");
+            }
+            default void show5(){
+                show4();
+            }
+            default void show6(){
+                System.out.println("show-6");
+            }
+        }
+      }
+    }
+}
+
+class E  implements A,A.B,A.B.C.D{
+   public void show3(){
+    System.out.println("show-3");
+   }
+}
+
+public class interface3 {
+    public static void main(String[] args) {
+        E p=new E();
+        p.show1();
+        p.show2();
+        p.show5();
+        p.show6();
+        p.show3();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

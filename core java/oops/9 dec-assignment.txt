@@ -1,0 +1,305 @@
+1.encapsulation(getter and setter)--------------------------------->
+
+first file---------------->
+
+class Agrregation {
+    int a;
+    void setA(int a){
+        this.a=a;
+    }
+    int getA(){
+        return a;
+    }
+}
+
+second file-------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args) {
+        Agrregation p=new Agrregation();
+        p.setA(78);
+        System.out.println(p.getA());
+    }
+}
+
+2.inheritance :
+single level--------------------------->
+
+first file----------------------------->
+
+class Agrregation {
+    void show1(){
+        System.out.println("heloo world");
+    }
+}
+class B extends Agrregation{
+    void show2(){
+        System.out.println("B class method");
+    }
+}
+
+second file------------------------------>
+
+public class Aggregation2 {
+    public static void main(String[] args) {
+        B p=new B();
+        p.show1();
+        p.show2();
+    }
+}
+
+multilevel inheritance-------------------------------------->
+
+first file ---------------------------->
+
+ class Agrregation {
+    void show1(){
+        System.out.println("heloo world");
+    }
+}
+class B extends Agrregation{
+    void show2(){
+        System.out.println("B class method");
+    }
+}
+class C extends B{
+    void show3(){
+        System.out.println("C class method");
+    }
+}
+
+second file----------------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args) {
+        C p=new C();
+        p.show1();
+        p.show2();
+        p.show3();
+    }
+}
+
+hirerichal inheritance------------------------------------------>
+
+first file------------------------->
+
+class Agrregation{
+    void show1(){
+        System.out.println("heloo world");
+    }
+}
+class B extends Agrregation{
+    void show2(){
+        System.out.println("B class method");
+    }
+}
+class C extends Agrregation{
+    void show3(){
+        System.out.println("C class method");
+    }
+}
+
+second file------------------------>
+
+public class Aggregation2 {
+    public static void main(String[] args) {
+        B k=new B();
+        k.show2();
+        C p=new C();
+        p.show1();
+        p.show3();
+    }
+}
+
+polymorphism :runtime(method overloading)-------------------------->
+
+first file-------------------->
+
+class Agrregation{
+    void show1(int a){
+        System.out.println("Show-1 method "+a);
+    }
+    void show1(){
+        System.out.println("Show-2 method");
+    }
+}
+
+second file------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        Agrregation p=new Agrregation();
+        p.show1(45);
+        p.show1();
+    }
+}
+
+constructor overloading--------------------------------------->
+
+first file------------------------>
+
+class A{
+    A(int a){
+       System.out.println("class A constructor "+a);
+    }
+    A(){
+        System.out.println("second constructor");
+    }
+}
+
+second file------------------------>
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        new A(67);
+        new A();
+    }
+}
+
+constructor chaining-------------------------------------------->
+
+first file-------------------------->
+
+class A{
+    A(int a){
+       System.out.println("First constructor "+a);
+    }
+}
+class B extends A{
+    B(){
+       super(67);
+       System.out.println("B class constructor");
+    }
+}
+
+second file---------------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        new B();
+    }
+}
+
+polymorphism : compile time(method overriding)------------------->
+
+first file--------------------------->
+
+class A{
+    void show1(int a){
+        System.out.println("A class method "+a);
+    }
+}
+class B extends A{
+    void show1(){
+        System.out.println("B class method");
+    }
+}
+
+second file------------------------>
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        B p=new B();
+        p.show1();
+        p.show1(78);
+    }
+}
+
+method overhiding-------------------------------------->
+
+first file--------------------------->
+
+class A{
+   static void show1(int a){
+        System.out.println("A class method "+a);
+    }
+}
+class B extends A{
+     static void show1(){
+        System.out.println("B class method");
+    }
+}
+
+second file----------------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        B.show1();
+        B.show1(78);
+    }
+}
+
+abstraction :
+abstract class 
+	another extends 
+
+another file access ----------------------------------------->
+
+first file----------------------->
+
+abstract class A{
+      abstract void show1();
+}
+class B extends A{
+     public void show1(){
+        System.out.println("Abstarct class method");
+     }
+}
+
+second file--------------------->
+
+public class Aggregation2 {
+    public static void main(String[] args){
+        B p=new B();
+        p.show1();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

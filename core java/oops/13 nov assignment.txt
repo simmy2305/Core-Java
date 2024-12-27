@@ -1,0 +1,575 @@
+1.private and private method------------------->
+
+class A{
+    private void show1(){
+        System.out.println("private method show 1");
+    }
+    void show2(){
+        A p=new A();
+        p.show1();
+    }
+}
+class B extends A{
+    private void show3(){
+        System.out.println("private method show 2");
+    }
+    void show4(){
+        B s=new B();
+        s.show3();
+    }
+}
+public class Multilevelinheritance {
+    public static void main(String [] args){
+        B k =new B();
+        k.show2();
+        k.show4();
+    }
+    
+}
+
+2.public and private method-------------------------->
+
+class A{
+    public void show1(){
+        System.out.println("private method show 1");
+    }
+}
+class B extends A{
+    private void show2(){
+        System.out.println("private method show 2");
+    }
+    void show3(){
+        B s=new B();
+        s.show2();
+    }
+}
+public class Multilevelinheritance {
+    public static void main(String [] args){
+        B k =new B();
+        k.show1();
+        k.show3();
+    }
+    
+}
+
+3.protected and protected method------------------->
+
+class A{
+    protected void show1(){
+        System.out.println("private method show 1");
+    }
+}
+class B extends A{
+    protected void show2(){
+        System.out.println("private method show 2");
+    }
+}
+public class Multilevelinheritance {
+    public static void main(String [] args){
+        B k =new B();
+        k.show1();
+        k.show2();
+    }
+    
+}
+
+4.protected and private method-------------------->
+
+class A{
+    protected void show1(){
+        System.out.println("private method show 1");
+    }
+}
+class B extends A{
+    private void show2(){
+        System.out.println("private method show 2");
+    }
+    void show3(){
+        B p=new B();
+        p.show2();
+    }
+}
+public class Multilevelinheritance {
+    public static void main(String [] args){
+        B k =new B();
+        k.show1();
+        k.show3();
+    }
+    
+}
+
+5.default constructor and default constructor---------------------->
+class A{
+    A(){
+       System.out.println("A class constructor");
+    }
+}
+class B extends A{
+    B(){
+        System.out.println("B class constructor");
+    }
+}
+public class Multilevelinheritance {
+    public static void main(String [] args){
+        new B();
+    }
+    
+}
+
+6.class A{
+    A(){
+       System.out.println("A class constructor");
+    }
+     private int show1(int a){
+        System.out.println("method show 1 "+a);
+        return a;
+    }
+    void show2(){
+        A p=new A();
+        p.show1(67);
+    }
+}
+class B extends A{
+    B(){
+        System.out.println("B class constructor");
+    }
+    protected B heloo(){
+        System.out.println("covariant return type");
+        return this;
+    }
+}
+public class Multilevelinheritance {
+    public static void main(String [] args){
+        B s=new B();
+        s.show2();
+        s.heloo();
+    }
+    
+}
+
+7.class A{
+    void show1(){
+        System.out.println("method show1");
+    }
+}
+class B extends A{
+    void show2(){
+        System.out.println("method show2");
+    }
+}
+class C extends B{
+    void show3(){
+        System.out.println("method show 3");
+    }
+}
+public class Multilevelinheritance {
+    public static void main(String [] args){
+        C p=new C();
+        p.show1();
+        p.show2();
+        p.show3();
+    }
+    
+}
+
+8.class A{
+    int show1(int a){
+        System.out.println("method show1 "+a);
+        return a;
+    }
+}
+class B extends A{
+    void show2(){
+        System.out.println("method show2");
+    }
+}
+class C extends B{
+    int show3(){
+        int a=10;
+        System.out.println("method show 3 "+a);
+        return a;
+    }
+}
+class D extends C{
+   int show4(int a){
+     System.out.println("method show 4 "+a);
+     return a;
+   }
+}
+class E extends D{
+  int show5(){
+    int a=56;
+    System.out.println("method show5 "+a);
+    return a;
+  }
+}
+class F extends E{
+   F show6(){
+    System.out.println("covariant return type");
+    return this;
+   }
+}
+public class Multilevelinheritance {
+    public static void main(String [] args){
+        F p=new F();
+        p.show1(89);
+        p.show2();
+        p.show3();
+        p.show4(78);
+        p.show5();
+        p.show6();
+    }
+    
+}
+
+9.class A{
+    A(){
+        System.out.println("A constructor");
+    }
+}
+class B extends A{
+    B(){
+        System.out.println(" B constructor");
+    }
+}
+class C extends B{
+    C(){
+        System.out.println("C constructor");
+    }
+}
+class D extends C{
+   D(){
+    System.out.println("D constructor");
+   }
+}
+class E extends D{
+  E(){
+    System.out.println("E constructor");
+  }
+}
+class F extends E{
+   F(){
+    System.out.println("F constructor");
+   }
+}
+public class Multilevelinheritance {
+    public static void main(String [] args){
+        new F();
+    }
+    
+}
+
+10.class A{
+    int a;
+    void setA1(int a){
+       this.a=a;
+       System.out.println("setA1 "+a);
+    }
+
+    int getA1(){
+      return a;
+    }
+}
+class B extends A{
+    int a;
+    void setA2(int a){
+      this.a=a;
+      System.out.println("setA2 "+a);
+    }
+    int getA2(){
+        return a;
+    }
+}
+class C extends B{
+    int a;
+    void setA3(int a){
+      this.a=a;
+      System.out.println("setA3 "+a);
+      
+    }
+    int getA3(){
+        return a;
+    }
+}
+class D extends C{
+    int a;
+    void setA4(int a){
+      this.a=a;
+      System.out.println("setA4 "+a);
+
+    }
+    int getA4(){
+        return a;
+    }
+}
+class E extends D{
+    int a;
+    void setA5(int a){
+      this.a=a;
+      System.out.println("setA5 "+a);
+
+    }
+    int getA5(){
+        return a;
+    }
+}
+class F extends E{
+    int a;
+    void setA6(int a){
+      this.a=a;
+      System.out.println("setA6 "+a);
+    }
+    int getA6(){
+        return a;
+    }
+}
+public class Multilevelinheritance {
+    public static void main(String [] args){
+        F p=new F();
+        p.setA1(67);
+        p.setA2(45);
+        p.setA3(89);
+        p.setA4(90);
+        p.setA5(23);
+        p.setA6(34);
+    }
+    
+}
+
+11.class A{
+    int a=10;
+    void show1(){
+     System.out.println("show-1 "+a);
+    }
+}
+class B extends A{
+    int b=30;
+    void show2(){
+        System.out.println("show-2 "+b);
+    }
+}
+class C extends B{
+    int c=30;
+    void show3(){
+        System.out.println("show-3 "+c);
+    }
+}
+class D extends C{
+    int d=40;
+    void show4(){
+        System.out.println("show-4 "+d);
+    }
+}
+class E extends D{
+    int e=60;
+    void show5(){
+        System.out.println("show-5 "+e);
+    }
+}
+class F extends E{
+    int f=a+b+c+d+e;  
+    void show6(){
+        System.out.println("sum of all is : "+f);
+    }
+}
+public class Multilevelinheritance {
+    public static void main(String [] args){
+        F p=new F();
+        p.show1();
+        p.show2();
+        p.show3();
+        p.show4();
+        p.show5();
+        p.show6();
+    }
+    
+}
+
+12.class A{
+    void show1(){
+     System.out.println("show-1");
+    }
+}
+class B extends A{
+    void show2(){
+        System.out.println("show-2");
+    }
+}
+class C extends A{
+    void show3(){
+        System.out.println("show-3");
+    }
+}
+class D extends A{
+    void show4(){
+        System.out.println("show-4");
+    }
+}
+class E extends A{
+    void show5(){
+        System.out.println("show-5");
+    }
+}
+public class Multilevelinheritance {
+    public static void main(String [] args){
+        B s=new B();
+        s.show1();
+        s.show2();
+        C k=new C();
+        k.show1();
+        k.show3();
+        D l=new D();
+        l.show1();
+        l.show4();
+        E p=new E();
+        p.show1();
+        p.show5();
+    }
+    
+}
+
+13.class A{
+    A(){
+        System.out.println("A constructor");
+    }
+}
+class B extends A{
+    B(){
+        System.out.println("B constructor");
+    }
+}
+class C extends A{
+    C(){
+        System.out.println("C constructor");
+    }
+}
+class D extends A{
+    D(){
+        System.out.println("D constructor");
+    }
+}
+class E extends A{
+    E(){
+        System.out.println("E constructor");
+    }
+}
+public class Multilevelinheritance {
+    public static void main(String [] args){
+        new B();
+        new C();
+        new D();
+        new E();
+    }
+    
+}
+
+14.class A{
+    int a;
+    void setA1(int a){
+        this.a=a;
+        System.out.println("setA1 "+a);
+    }
+    int getA1(){
+        return a;
+    }
+}
+class B extends A{
+    int a;
+    void setA2(int a){
+        this.a=a;
+        System.out.println("setA2 "+a);
+    }
+    int getA2(){
+        return a;
+    }
+}
+class C extends A{
+    int a;
+    void setA3(int a){
+        this.a=a;
+        System.out.println("setA3 "+a);
+    }
+    int getA3(){
+        return a;
+    }
+}
+class D extends A{
+    int a;
+    void setA4(int a){
+        this.a=a;
+        System.out.println("setA4 "+a);
+    }
+    int getA4(){
+        return a;
+    }
+}
+class E extends A{
+    int a;
+    void setA5(int a){
+        this.a=a;
+        System.out.println("setA5 "+a);
+    }
+    int getA5(){
+        return a;
+    }
+}
+public class Multilevelinheritance {
+    public static void main(String [] args){
+        B p=new B();
+        p.setA1(67);
+        p.setA2(89);
+        C s=new C();
+        s.setA3(78);
+        D k=new D();
+        k.setA4(78);
+        E l=new E();
+        l.setA5(67);
+    }
+    
+}
+
+15.class A{
+    int a=10;
+    void show1(){
+        System.out.println(" A is : "+a);
+    }
+}
+class B extends A{
+    int b=20;
+    void show2(){
+        System.out.println(" B is : "+b);
+    }
+}
+class C extends A{
+    int c=30;
+    void show3(){
+        System.out.println(" C is : "+c);
+    }
+}
+class D extends A{
+    int d=40;
+    void show4(){
+        System.out.println(" D is : "+d);
+    }
+}
+class E extends A{
+    int e=50;
+    void show5(){
+        System.out.println(" E is : "+e);
+    }
+}
+public class Multilevelinheritance {
+    public static void main(String [] args){
+        B p=new B();
+        p.show1();
+        p.show2();
+        C s=new C();
+        s.show3();
+        D k=new D();
+        k.show4();
+        E l=new E();
+        l.show5();
+    }
+    
+}
+

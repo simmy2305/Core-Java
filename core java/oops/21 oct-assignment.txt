@@ -1,0 +1,290 @@
+1.
+public class num {
+
+    public static void main (String[] args){
+        int a =56;
+        System.out.println(a);
+    }
+}
+
+2.
+public class Num {
+
+    public static void main (String[] args){
+        float f = -5.67f;
+        System.out.println(f);
+    }
+}
+
+3.
+public class Num {
+
+    public static void main (String[] args){
+        char f = 'y';
+        System.out.println(f);
+    }
+}
+
+4.
+public class Num {
+
+    public static void main (String[] args){
+        int f = 67;
+        System.out.println(f);
+    }
+}
+
+5.
+
+public class Num {
+
+    public static void main (String[] args){
+        float f = -3.56f;
+        System.out.println(f);
+    }
+}
+
+6.
+public class Num {
+
+    public static void main (String[] args){
+        char f = 'y';
+        System.out.println(f);
+    }
+}
+
+7.
+public class Num {
+
+    public static void main (String[] args){
+        int f = -9;
+        System.out.println(f);
+    }
+}
+8.
+
+public class Num {
+
+    public static void main (String[] args){
+        float f =4.2f;
+        System.out.println(f);
+    }
+}
+
+9.
+
+public class Num {
+
+    public static void main (String[] args){
+        char f ='t';
+        System.out.println(f);
+    }
+}
+10.
+
+public class Num {
+
+    public static void main (String[] args){
+        int a = 45;
+        int b=7;
+        int c=a+b;
+        System.out.println(c);
+    }
+}
+
+11.
+
+public class Num {
+
+    public static void main (String[] args){
+        int a =234;
+        int b=55;
+        int c=a-b;
+        System.out.println(c);
+    }
+}
+
+12.
+public class Num {
+
+    public static void main (String[] args){
+        int a=56;
+        int b=4;
+        int c=a*b;
+        System.out.println(c);
+    }
+}
+
+13.
+public class Num {
+
+    public static void main (String[] args){
+        int a=22;
+        int b=2;
+        int c=a/b;
+        System.out.println(c);
+    }
+}
+
+14.public class Basic {
+
+    public static void main (String[] args){
+        int a=45;
+        int b=67;
+        int c=a+b;
+        System.out.println(c);
+    }
+}
+
+15.public class Basic {
+
+    public static void main (String[] args){
+        int a=23;
+        int b=2;
+        int c=a-b;
+        System.out.println(c);
+    }
+}
+
+16.public class Basic {
+
+    public static void main (String[] args){
+        int a=34;
+        int b=5;
+        int c=a*b;
+        System.out.println(c);
+    }
+}
+17.public class Basic {
+
+    public static void main (String[] args){
+        int a=22;
+        int b=2;
+        int c=a/b;
+        System.out.println(c);
+    }
+}
+
+18.public class Basic {
+
+    public static void main (String[] args){
+        int a=34;
+        int b=67;
+        int c=23;
+        int d=12;
+        int e=6;
+        int sum=a+b+c+d+e;
+        System.out.println(sum);
+    }
+}
+
+19.public class Basic {
+
+        public static void main (String[] args){
+            int a=23;
+            int b=89;
+            int c=12;
+            int d=56;
+            int sum=a+b+c+d;
+            System.out.println(sum);
+        }
+    }
+
+20.public class Basic {
+
+    public static void main (String[] args){
+        int a=56;
+        int b=34;
+        int c=12;
+        int d=2;
+        int e=13;
+        int sum=a*b+c/d-e;
+        System.out.println(sum);
+    }
+}
+
+21.public class Basic {
+
+    public static void main (String[] args){
+        float a=1.2f;
+        float b=6.7f;
+        float c=4.5f;
+        int d=2;
+        float sum=a*b-c/d;
+        System.out.println(sum);
+    }
+}
+
+22.public class Basic {
+
+    public static void main (String[] args){
+        float a=1.6f;
+        int b=12;
+        int c=2;
+        int d=2;
+        float e=7.8f;
+        float f=1.5f;
+        float sum=a*(b-c)/d+e-f;
+        System.out.println(sum);
+    }
+}
+
+23.public class Basic {
+
+    public static void main (String[] args){
+        float a=4.5f;
+        float b=1.2f;
+        int c=82;
+        int d=2;
+        float e=5.6f;
+        float f=1.234f;
+        float sum=a*b-(c/d)-e+f;
+        System.out.println(sum);
+    }
+}
+
+24.public class Basic {
+
+    public static void main (String[] args){
+        int a=8;
+        int b=1;
+        int c=4;
+        int d=2;
+        int e=1;
+        int f=6;
+        int sum=a*b+(c-d)/e+f;
+        System.out.println(sum);
+    }
+}
+
+25.public class Basic {
+
+    public static void main (String[] args){
+        float a=3.4f;
+        float b=1.2f;
+        float c=3.7f;
+        float d=1.2f;
+        int e=2;
+        float f=6.8f;
+        float sum=a*b+(c-d)/e+f;
+        System.out.println(sum);
+    }
+}
+
+26.public class Basic {
+
+    public static void main (String[] args){
+        float a=8.9f;
+        float b=1.67f;
+        float c=6.21f;
+        float d=5.6f;
+        float e=7.8f;
+        int f=34;
+        int g=157;
+        float sum=a*b-(c-d)+e-f+g;
+        System.out.println(sum);
+    }
+}
+
+
+

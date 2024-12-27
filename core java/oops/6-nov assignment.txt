@@ -1,0 +1,154 @@
+1.class 
+	method :
+	all primitive data type 
+	return type :String
+	covariant return type------------------->
+
+class A{
+    void show(){
+        int a=10;
+        System.out.println("value of a is : "+a);
+        float b=4.5f;
+        System.out.println("value  of b is : "+b);
+        char c='s';
+        System.out.println("value of c is : "+c);
+        double d=6.78;
+        System.out.println("value of  d is : "+d);
+        long e=789;
+        System.out.println("value of e is : "+e);
+        short f=8906;
+        System.out.println("value of f is : "+f);
+        byte g=127;
+        System.out.println("value of g is : "+g);
+        boolean h=true;
+        System.out.println("value of h is : "+h);
+    }
+
+    public String show1(){
+      return "simran";
+    } 
+    A heloo(){
+        System.out.println("This is a covarient class");
+        return this;
+    }
+}
+public class Returnandnoargument1 {
+    public static void main(String[] args) {
+        A p=new A();
+        p.show();
+        System.out.println(p.show1());
+        p.heloo();
+    }
+}
+
+2.class 
+    method : add() 
+            sub()
+            div()
+            multi()
+            mod()------------------------------------>
+
+class A{
+    void show(){
+        int a=5,b=10;
+        System.out.println("sum of "+a+" and "+b+" is : "+(a+b));
+        System.out.println("sub of "+a+" and "+b+" is : "+(a-b));
+        System.out.println("multiplication of "+a+" and "+b+" is : "+(a*b));
+        System.out.println("division of "+a+" and "+b+" is : "+(a/b));
+        System.out.println("modulus of "+a+" and "+b+" is : "+(a%b));
+    }
+
+}
+public class Returnandnoargument1 {
+    public static void main(String[] args) {
+        A p=new A();
+        p.show();
+    }
+}
+
+3.class  
+    method :
+        even()
+        factorial()
+        pallindrome()
+        armstrong() 
+        neon() -------------------------------------------->
+
+import java.util.*;
+class A{
+    void show(){
+       Scanner sc = new Scanner(System.in);
+       System.out.println("Enter a value : ");
+       int a=sc.nextInt();
+       //even number()
+       if(a%2==0){
+       System.out.println("EVEN");
+       }
+       else{
+        System.out.println("NOT EVEN");
+       }
+       //factorial()
+       int fact=1;
+       for(int i=a;i>=1;i--){
+         fact=fact*i;
+       }
+       System.out.println("factorial  of "+a+" is : "+fact);
+       
+       //pallindrome()
+       int original_num=a,reversed_num=0,remainder,sum=0;
+       while(a!=0){
+          remainder=a%10;
+          int n=a%10;
+          reversed_num=reversed_num*10+remainder;
+          sum=sum+(n*n*n);
+          a=a/10;
+       }
+       if(original_num==reversed_num){
+         System.out.println("palindrome");
+       }
+       else{
+        System.out.println("not a palindrome");
+       }
+       if(original_num==sum){
+        System.out.println("Armstrong number");
+      }
+      else{
+        System.out.println("not an armstrong");
+      }
+
+      //neon
+      int sq=a*a,num;
+      int sum1=0;
+      while(sq!=0){
+        num=sq%10;
+        sum1=sum1+num;
+      }
+      if(a==sum1){
+        System.out.println("Neon");
+      }
+      else{
+        System.out.println("Not a neon");
+      }
+
+    }
+
+}
+public class Returnandnoargument1 {
+    public static void main(String[] args) {
+        A p=new A();
+        p.show();
+    }
+}
+
+4.class 
+    method : 
+        String input :  
+        even :even()
+       fact: factorial()
+       pallindrome: pallindrome()
+       arm: armstrong() 
+       neon: neon() ------------------------------------------>
+
+
+
+

@@ -1,0 +1,261 @@
+1.class A{
+    A(int a){
+        System.out.println("first constructor");
+    }
+    A(){
+        this(4,5,7,8);
+        System.out.println("second constructor");
+    }
+    A(float a){
+        this(89);
+       System.out.println("third constructor");
+    }
+    A(int a ,int b){
+        this(4.5f);
+      System.out.println("fourth constructor");
+    }
+    A(int a,int b,int c){
+      System.out.println("fifth constructor");
+    }
+    A(int a,int b,int c,int d){
+        this(4,5);
+       System.out.println("sixth constructor");
+    }
+}
+public class constructorchaining {
+    public static void main(String[] args){
+     new A(5,6,8);
+     new A();
+    }
+}
+
+2.single level inheritance method overriding ----------------------------------->
+
+class A{
+    void show(){
+      System.out.println("A class");
+    }
+}
+class B extends A{
+    void show(){
+        super.show();
+      System.out.println("B class");
+    }
+}
+public class constructorchaining {
+    public static void main(String[] args){
+     B p=new B();
+     p.show();
+    }
+}
+
+3.multi level inheritance method overriding ---------------------------------->
+
+class A{
+    void show(){
+      System.out.println("A class");
+    }
+}
+class B extends A{
+    void show(){
+        super.show();
+      System.out.println("B class");
+    }
+}
+class C extends B{
+    void show(){
+        super.show();
+        System.out.println("C class");
+    }
+}
+public class constructorchaining {
+    public static void main(String[] args){
+     C p=new C();
+     p.show();
+    }
+}
+
+4.heirarichal level inheritance method overriding -------------------------------->
+
+class A{
+    void show(){
+      System.out.println("A class");
+    }
+}
+class B extends A{
+    void show(){
+        super.show();
+      System.out.println("B class");
+    }
+}
+class C extends A{
+    void show(){
+        System.out.println("C class");
+    }
+}
+public class constructorchaining {
+    public static void main(String[] args){
+      B s=new B();
+      s.show();
+      C p=new C();
+      p.show();
+    }
+}
+
+5.method overriding ----------->
+[class name different method name same used extends keyword and number of parameter same]
+
+class A{
+    void show(){
+      System.out.println("A class");
+    }
+}
+class B extends A{
+    void show(){
+      System.out.println("B class");
+    }
+}
+
+public class constructorchaining {
+    public static void main(String[] args){
+      B s=new B();
+      s.show();
+    }
+}
+
+[class name different method name same used extends keyword and number of parameter different]
+
+class A{
+    void show(int a){
+      System.out.println("A class"+a);
+    }
+}
+class B extends A{
+    void show(){
+      System.out.println("B class");
+    }
+}
+
+public class constructorchaining {
+    public static void main(String[] args){
+      B s=new B();
+      s.show(45);
+    }
+}
+
+[class name different method name same used extends keyword and number of parameter same but return type method different ]
+error--------------------->
+ class A{
+    void show(){
+      System.out.println("A class ");
+    }
+}
+class B extends A{
+    
+    int show(){
+     System.out.println("B class "+a);
+      return a;
+    }
+}
+
+public class constructorchaining {
+    public static void main(String[] args){
+      B s=new B();
+      s.show(56);
+    }
+}
+
+solved---------->
+class A{
+    void show(){
+      System.out.println("A class ");
+    }
+}
+class B extends A{
+    
+    int show(int a){
+     System.out.println("B class "+a);
+      return a;
+    }
+}
+
+public class constructorchaining {
+    public static void main(String[] args){
+      B s=new B();
+      s.show(56);
+    }
+}
+parameterised constructor super method access[single level]------------------------->
+
+class A{
+    A(int a){
+       System.out.println("A class constructor "+a);
+    }
+}
+class B extends A{
+    B(){
+        super(45);
+        System.out.println("B classs constructor");
+    }
+}
+public class constructorchaining {
+    public static void main(String[] args){
+      new B();
+    }
+}
+
+parameterised constructor super method access[multilevel]------------------------->
+
+class A{
+    A(int a){
+       System.out.println("A class constructor "+a);
+    }
+}
+class B extends A{
+    B(){
+        super(45);
+        System.out.println("B classs constructor");
+    }
+}
+class C extends B{
+    C(){
+       System.out.println("C class constructor");
+    }
+}
+public class constructorchaining {
+    public static void main(String[] args){
+      new C();
+    }
+}
+
+parameterised constructor super method access[heirarichal]------------------------->
+
+class A{
+    A(int a){
+       System.out.println("A class constructor "+a);
+    }
+}
+class B extends A{
+    B(){
+        super(78);
+        System.out.println("B classs constructor");
+    }
+}
+class C extends A{
+    C(){
+        super(56);
+       System.out.println("C class constructor");
+    }
+}
+public class constructorchaining {
+    public static void main(String[] args){
+      new B();
+      new C();
+    }
+}
+
+
+
+
+
+
